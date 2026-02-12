@@ -1,2052 +1,1073 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- 
-    =====================================================
-    SAINIK PUBLIC SCHOOL - OFFICIAL WEBSITE
-    =====================================================
-    Template Version: 1.0
-    Last Updated: 2024
-    
-    This is a complete HTML-only school website template.
-    Easy to edit and customize for any educational institution.
-    
-    HOW TO EDIT:
-    - Search for section comments to find specific areas
-    - Replace placeholder text with actual content
-    - Replace placeholder images with real school photos
-    - Update contact information as needed
-    =====================================================
-    -->
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aniket Sainik School - Excellence in Education & Discipline</title>
+  <meta name="description" content="Aniket Sainik School - Excellence in Education, Discipline, and Character Building. Admissions Open for 2026-27." />
+  <meta name="keywords" content="school, education, sainik school, admission, academics" />
 
-/* =============================
-   GLOBAL RESET
-============================= */
-*{
-    box-sizing:border-box;
-}
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-body{
-    font-family:'Segoe UI', Arial, sans-serif;
-    margin:0;
-    padding:0;
-    scroll-behavior:smooth;
-    overflow-x:hidden;
-}
-
-/* =============================
-   IMAGES
-============================= */
-img{
-    max-width:100%;
-    height:auto;
-    border-radius:8px;
-    transition:.3s;
-}
-
-/* =============================
-   TABLE RESPONSIVE
-============================= */
-table{
-    max-width:100%;
-    width:100%;
-}
-
-/* Prevent overflow */
-td{
-    word-wrap:break-word;
-}
-
-/* =============================
-   NAVIGATION
-============================= */
-nav a{
-    text-decoration:none;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#f39c12 !important;
-}
-
-/* =============================
-   BUTTONS
-============================= */
-a{
-    display:inline-block;
-}
-
-/* =============================
-   CARDS EFFECTS
-============================= */
-table[bgcolor="#f8f9fa"],
-table[bgcolor="#ffffff"],
-.faculty-card{
-    border-radius:10px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
-    transition:.3s;
-}
-
-/* =============================
-   FACULTY IMAGES
-============================= */
-.faculty-img{
-    width:150px;
-    height:150px;
-    object-fit:cover;
-    border-radius:50%;
-}
-
-/* =============================
-   MOBILE RESPONSIVE
-============================= */
-@media (max-width: 768px){
-
-    /* stack everything */
-    table,
-    tr,
-    td{
-        display:block;
-        width:100% !important;
+  <style>
+    html {
+      scroll-behavior: smooth;
     }
-
-    td{
-        text-align:center !important;
-        padding:10px !important;
+    .hero-bg {
+      background-image: linear-gradient(rgba(26, 82, 118, 0.8), rgba(69, 1, 80, 0.9)),
+        url('photo/schoolimage.jpeg');
+      background-size: cover;
+      background-position: center;
     }
-
-    /* navigation wrap */
-    nav td{
-        text-align:center !important;
+    .faculty-img {
+      width: 140px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 9999px;
+      border: 3px solid #1a5276;
     }
-
-    nav font{
-        line-height:32px;
+    .shadow-card {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
-
-    /* reduce fonts */
-    font[size="6"]{font-size:22px !important;}
-    font[size="5"]{font-size:20px !important;}
-    font[size="4"]{font-size:18px !important;}
-    font[size="3"]{font-size:15px !important;}
-    font[size="2"]{font-size:13px !important;}
-
-    /* hero section height */
-    #home td{
-        height:auto !important;
-        padding:40px 15px;
-    }
-
-    /* faculty cards */
-    .faculty-card{
-        margin-bottom:15px;
-    }
-
-    /* remove big paddings */
-    section{
-        padding:10px 0;
-    }
-
-    /* gallery spacing */
-    #gallery td{
-        margin-bottom:10px;
-    }
-}
-
-/* =============================
-   EXTRA SMALL PHONES
-============================= */
-@media (max-width:480px){
-
-    font[size="6"]{font-size:18px !important;}
-    font[size="5"]{font-size:16px !important;}
-    font[size="4"]{font-size:15px !important;}
-
-    td{
-        padding:8px !important;
-    }
-}
-
-</style>
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ANIKET Sainik School - Excellence in Education, Discipline, and Character Building. Admissions Open for 2026-27.">
-    <meta name="keywords" content="school, education, sainik school, admission, academics">
-    <title> Aniket Sainik School - Excellence in Education & Discipline</title>
+  </style>
 </head>
-
-<body bgcolor="#ffffff" text="#333333" link="#1a5276" vlink="#6c3483" alink="#c0392b">
-
-    <!-- 
-    =====================================================
-    TOP HEADER SECTION
-    Contains: Contact info, Social icons, Admission highlight
-    To edit: Update phone numbers, email, and social links
-    =====================================================
-    -->
-    <header>
-        <table width="100%" cellpadding="10" cellspacing="0" bgcolor="#1a5276">
-            <tr>
-                <!-- Contact Information -->
-                <td width="40%" align="left">
-                    <font color="#ffffff" size="2">
-                        <b>📞 Phone:</b> +91- 8237372626 / 7447622626 / 9623361291 <br>
-                        <b>📧 Email:</b> aniketsainikschool1@gmail.com
-                    </font>
-                </td>
-                
-                <!-- Admission Open Badge -->
-                <td width="30%" align="center">
-                    <table cellpadding="8" cellspacing="0" bgcolor="#e74c3c">
-                        <tr>
-                            <td>
-                                <font color="#ffffff" size="2"><b>🎓 ADMISSION 2026-27 OPEN - APPLY NOW!</b></font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                
-                <!-- Social Media Links -->
-                <td width="30%" align="right">
-                    <font color="#ffffff" size="2">
-                        <a href="https://www.facebook.com/share/1D35LxcTpr/"><font color="#ffffff">Facebook</font></a> |  
-                        <a href="https://www.instagram.com/aniket_sainik_school?igsh=MXV3NXhuc2Z1MnBhOA=="><font color="#ffffff">Instagram</font></a> 
-                        
-                    </font>
-                </td>
-            </tr>
-        </table>
-    </header>
-
-    <!-- 
-    =====================================================
-    NAVIGATION BAR SECTION
-    Contains: School logo, Main navigation menu
-    To edit: Add or remove menu items as needed
-    =====================================================
-    -->
-    <nav>
-        <table width="100%" cellpadding="15" cellspacing="0" bgcolor="#2c3e50">
-            <tr>
-                <!-- School Logo and Name -->
-                <td width="30%" align="left">
-                    <table cellpadding="0" cellspacing="0">
-                        <tr>
-                            <td>
-                                <img src="photo/schoollogo.jpeg" alt="School Logo" width="60" height="60">
-                            </td>
-                            <td>&nbsp;&nbsp;</td>
-                            <td>
-                                <font color="#f39c12" size="4"><b>ANIKET SAINIK SCHOOL</b></font><br>
-                                <font color="#bdc3c7" size="2">Building Future Leaders Since 2014</font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                
-                <!-- Main Navigation Menu -->
-                <td width="70%" align="right">
-                    <font size="2">
-                        <a href="#home"><font color="#ffffff"><b>HOME</b></font></a> &nbsp;|&nbsp;
-                        <a href="#about"><font color="#ffffff"><b>ABOUT</b></font></a> &nbsp;|&nbsp;
-                        <a href="#academics"><font color="#ffffff"><b>ACADEMICS</b></font></a> &nbsp;|&nbsp;
-                        <!-- <a href="#curriculum"><font color="#ffffff"><b>CURRICULUM</b></font></a> &nbsp;|&nbsp; -->
-                        <a href="#facilities"><font color="#ffffff"><b>FACILITIES</b></font></a> &nbsp;|&nbsp;
-                        <a href="#gallery"><font color="#ffffff"><b>GALLERY</b></font></a> &nbsp;|&nbsp;
-                        <a href="#admission"><font color="#ffffff"><b>ADMISSION</b></font></a> &nbsp;|&nbsp;
-                        <a href="#contact"><font color="#ffffff"><b>CONTACT</b></font></a>
-                    </font>
-                </td>
-            </tr>
-        </table>
-    </nav>
-
-    <!-- 
-    =====================================================
-    HERO BANNER SECTION
-    Contains: Main headline, Subheading, CTA buttons
-    To edit: Change headline text, update button links
-    =====================================================
-    -->
-    <section id="home">
-        <table width="100%" cellpadding="0" cellspacing="0">
-            <tr>
-                <td background="https://via.placeholder.com/1920x600/1a5276/ffffff?text=School+Campus+Hero+Image" height="500" align="center" valign="middle">
-                    <table width="80%" cellpadding="30" cellspacing="0" bgcolor="#450150" style="opacity:0.85">
-                        <tr>
-                            <td align="center">
-                                <!-- Main Headline -->
-                                <font color="#f39c12" size="6">
-                                    <b>SHAPING TOMORROW'S LEADERS TODAY</b>
-                                </font>
-                                <br><br>
-                                
-                                <!-- Subheadline -->
-                                <font color="#ffffff" size="4">
-                                    Decorum | Discipline | Growth | 
-                                </font>
-                                <br><br>
-                                
-                                <!-- Tagline -->
-                                <font color="#bdc3c7" size="3">
-                                    A premier SSC affiliated institution dedicated to nurturing young minds<br>
-                                    with a perfect blend of academic excellence and military discipline.
-                                </font>
-                                <br><br><br>
-                                
-                                <!-- Call-to-Action Buttons -->
-                                <table cellpadding="0" cellspacing="10">
-                                    <tr>
-                                        <td bgcolor="#e74c3c" align="center">
-                                            <a href="#admission">
-                                                <font color="#ffffff" size="5   ">
-                                                    <b>&nbsp;&nbsp;📝 APPLY NOW&nbsp;&nbsp;</b>
-                                                </font>
-                                            </a>
-                                        </td>
-                                        <td>&nbsp;&nbsp;</td>
-                                        <td bgcolor="#27ae60" align="center">
-                                            <a href="#about">
-                                                <font color="#ffffff" size="5">
-                                                    <b>&nbsp;&nbsp;🔍 EXPLORE SCHOOL&nbsp;&nbsp;</b>
-                                                </font>
-                                            </a>
-                                        </td>
-                                        
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <!-- Decorative Divider -->
-    <hr width="80%" size="2" color="#f39c12" noshade>
-
-    <!-- 
-    =====================================================
-    SCHOOL AT A GLANCE - QUICK FACTS SECTION
-    Contains: Key statistics about the school
-    To edit: Update numbers and facts as per your school
-    =====================================================
-    -->
-    <section id="glance">
-        <table width="100%" cellpadding="20" cellspacing="0" bgcolor="#ecf0f1">
-            <tr>
-                <td align="center">
-                    <font size="5" color="#1a5276"><b>SCHOOL AT A GLANCE</b></font>
-                    <br><br>
-                    
-                    <!-- Quick Facts Grid -->
-                    <table width="90%" cellpadding="20" cellspacing="10">
-                        <tr>
-                            <!-- Fact 1: Year Established -->
-                            <td width="16%" align="center" bgcolor="#1a5276">
-                                <font color="#f39c12" size="5"><b>2014</b></font><br>
-                                <font color="#ffffff" size="2">Year Established</font>
-                            </td>
-                            
-                            <!-- Fact 2: Total Students -->
-                            <td width="16%" align="center" bgcolor="#27ae60">
-                                <font color="#ffffff" size="5"><b>450+</b></font><br>
-                                <font color="#ffffff" size="2">Students Enrolled</font>
-                            </td>
-                            
-                            <!-- Fact 3: Qualified Teachers -->
-                            <td width="16%" align="center" bgcolor="#e74c3c">
-                                <font color="#ffffff" size="5"><b>40+</b></font><br>
-                                <font color="#ffffff" size="2">Expert Teachers</font>
-                            </td>
-                            
-                            <!-- Fact 4: Campus Area -->
-                            <td width="16%" align="center" bgcolor="#9b59b6">
-                                <font color="#ffffff" size="5"><b>8</b></font><br>
-                                <font color="#ffffff" size="2">Acre Campus</font>
-                            </td>
-                            
-                            <!-- Fact 5: Board Results -->
-                            <td width="16%" align="center" bgcolor="#f39c12">
-                                <font color="#ffffff" size="5"><b>100%</b></font><br>
-                                <font color="#ffffff" size="2">Board Pass Rate</font>
-                            </td>
-                            
-                            <!-- Fact 6: Awards -->
-                            <td width="16%" align="center" bgcolor="#2c3e50">
-                                <font color="#f39c12" size="5"><b>5+</b></font><br>
-                                <font color="#ffffff" size="2">National Awards</font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <br><br>
-
-    <!-- 
-    =====================================================
-    ABOUT THE SCHOOL SECTION
-    Contains: Vision, Mission, Values, School Philosophy
-    To edit: Replace text with your school's information
-    =====================================================
-    -->
-    <section id="about">
-        <table width="90%" cellpadding="30" cellspacing="0" align="center">
-            <tr>
-                <td align="center">
-                    <font size="5" color="#1a5276"><b> ABOUT ANIKET SAINIK SCHOOL</b></font>
-                    <br><br>
-                    <font size="3" color="#7f8c8d">
-                        Established in 2014, Nurturing Excellence for Over Decades
-                    </font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" cellpadding="20" cellspacing="15">
-                        <tr>
-                            <!-- About Introduction -->
-                            <td width="50%" valign="top" bgcolor="#f8f9fa">
-                                <font size="4" color="#1a5276"><b>Our Story</b></font>
-                                <hr size="2" color="#f39c12" width="100" align="left" noshade>
-                                <font size="3">
-                                    Aniket Sainik School stands as a beacon of educational excellence in the heart of the village. 
-                                    Founded by - Mr.Arjun Kalnu Gawai(President of Aniket Sainik School, Lakshya Carrier Academy, NAFS Engineering College, Urdu Junior College)
-                                    Founded with a vision to create future leaders, our institution combines rigorous academics 
-                                    with character development, physical training, and moral values.
-                                    <br><br>
-                                    We believe in holistic development where every student is encouraged to explore their 
-                                    potential, develop critical thinking skills, and become responsible citizens of tomorrow.
-                                    Our unique approach integrates military-style discipline with modern educational practices.
-                                </font>
-                            </td>
-                            
-                            <!-- School Image -->
-                            <td width="50%" align="center" valign="top">
-                                <img src="photo/schoolimage.jpeg" 
-                                     alt="School Building" width="100%" height="300">
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <!-- Vision, Mission, Values Grid -->
-                    <table width="100%" cellpadding="25" cellspacing="10">
-                        <tr>
-                            <!-- Our Vision -->
-                            <td width="33%" valign="top" bgcolor="#1a5276" align="center">
-                                <font color="#f39c12" size="4"><b> OUR VISION</b></font>
-                                <br><br>
-                                <font color="#ffffff" size="3">
-                                    To be a world-class educational institution that produces intellectually capable, 
-                                    physically fit, and morally upright individuals who will serve as leaders in 
-                                    various walks of life and contribute to nation-building.
-                                </font>
-                            </td>
-                            
-                            <!-- Our Mission -->
-                            <td width="33%" valign="top" bgcolor="#27ae60" align="center">
-                                <font color="#ffffff" size="4"><b> OUR MISSION</b></font>
-                                <br><br>
-                                <font color="#ffffff" size="3">
-                                    To provide quality education that develops the whole child - intellectually, 
-                                    emotionally, socially, and physically. We commit to fostering a love for learning, 
-                                    instilling discipline, and preparing students for challenges of the modern world.
-                                </font>
-                            </td>
-                            
-                            <!-- Core Values -->
-                            <td width="33%" valign="top" bgcolor="#e74c3c" align="center">
-                                <font color="#ffffff" size="4"><b>💎 CORE VALUES</b></font>
-                                <br><br>
-                                <font color="#ffffff" size="3">
-                                    <b>Integrity</b> - Honesty in all actions<br>
-                                    <b>Excellence</b> - Striving for the best<br>
-                                    <b>Discipline</b> - Self-control and order<br>
-                                    <b>Respect</b> - For self and others<br>
-                                    <b>Courage</b> - To face challenges
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td align="center" bgcolor="#f8f9fa">
-                    <br>
-                    <font size="4" color="#1a5276"><b>📜 School Philosophy</b></font>
-                    <br><br>
-                    <font size="3">
-                        <i>"Education shapes who we become,and its benefits stay for life."</i>
-                        <br><br>
-                        At Aniket Sainik School, we believe that every child is unique and possesses immense potential. 
-                        Our philosophy centers on discovering and nurturing this potential through a balanced approach 
-                        of academics, co-curricular activities, sports, and character education. We prepare students 
-                        not just for examinations, but for life itself.
-                    </font>
-                    <br><br>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <br>
-    <hr width="80%" size="2" color="#f39c12" noshade>
-    <br>
-
-    <!-- President -->
-    <section id="principal">
-        <table width="90%" cellpadding="30" cellspacing="0" align="center">
-            <tr>
-                <td align="center">
-                    <font size="5" color="#1a5276"><b> PRESIDENT'S MESSAGE</b></font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" cellpadding="20" cellspacing="0" bgcolor="#f8f9fa">
-                        <tr>
-                            <!-- President Photo -->
-                            <td width="30%" align="center" valign="top">
-                                <img src="photo/presidentimage.jpeg"
-                                     alt="Principal" width="250" height="300">
-                                <br><br>
-                                <font size="4" color="#1a5276"><b>Arjun Gawai</b></font><br>
-                                <font size="2" color="#7f8c8d">Ex Army Man</font><br>
-                                <font size="2" color="#27ae60"><b>President</b></font>
-                            </td>
-                            
-                            
-
-                            <!-- Principal's Message -->
-                            <td width="70%" valign="top">
-                                <font size="4" color="#1a5276"><b>Dear Students, Parents, and Well-wishers,</b></font>
-                                <br><br>
-                                <font size="3">
-                                    Welcome to Aniket Sainik School. Our aim is to give every student good education with discipline, confidence, and strong values. We believe that children should learn not only from books, but also through activities, sports, and daily habits that build character.
-                                    <br><br>
-                                   At our school, we teach our students to be respectful, responsible, and honest. We focus on physical training, classroom learning, and other programs that help students become leaders in the future. Our teachers work hard to support each child so they can discover their strengths and improve every day.
-                                    <br><br>
-                                   We are proud of our students and the progress they make. With the support of parents and teachers, we hope to guide our young cadets towards success in their studies and in life.
-                                    <br><br>
-                            
-                    
-                                    <br><br>
-                                    <font color="#1a5276"><b>With warm regards,<br>Arjun Gawai</b></font>
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-    <!-- 
-    =====================================================
-    PRINCIPAL'S MESSAGE SECTION
-    Contains: Principal photo, Welcome message
-    To edit: Replace photo and message content
-    =====================================================
-    -->
-    <section id="principal">
-        <table width="90%" cellpadding="30" cellspacing="0" align="center">
-            <tr>
-                <td align="center">
-                    <font size="5" color="#1a5276"><b> PRINCIPAL'S MESSAGE</b></font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" cellpadding="20" cellspacing="0" bgcolor="#f8f9fa">
-                        <tr>
-                            <!-- President Photo -->
-                            <td width="30%" align="center" valign="top">
-                                <img src="photo/principalimage.jpeg"
-                                     alt="Principal" width="250" height="300">
-                                <br><br>
-                                <font size="4" color="#1a5276"><b>Pradip Jadhao</b></font><br>
-                                <font size="2" color="#7f8c8d">M.A., M.Ed.(Education)</font><br>
-                                <font size="2" color="#27ae60"><b>Principal</b></font>
-                            </td>
-                            
-                            
-
-                            <!-- Principal's Message -->
-                            <td width="70%" valign="top">
-                                <font size="4" color="#1a5276"><b>Dear Students, Parents, and Well-wishers,</b></font>
-                                <br><br>
-                                <font size="3">
-                                    Welcome to Aniket Sainik School! It gives me immense pleasure to lead an institution 
-                                    that has been shaping young minds for over a decades.
-                                    <br><br>
-                                    In today's rapidly changing world, education must go beyond textbooks. At our school, 
-                                    we focus on developing well-rounded individuals who are not only academically proficient 
-                                    but also possess strong moral character, leadership qualities, and a sense of 
-                                    responsibility towards society.
-                                    <br><br>
-                                    Our dedicated faculty, state-of-the-art facilities, and comprehensive curriculum ensure 
-                                    that every student receives the best possible education. We take pride in our military-style 
-                                    discipline that instills values of punctuality, integrity, and respect in our students.
-                                    <br><br>
-                                    I invite you to explore our school and discover why Aniket Sainik School is the 
-                                    right choice for your child's future. Together, let us build a generation of leaders 
-                                    who will make our nation proud.
-                                    <br><br>
-                                    <i>"Education is the most powerful weapon which you can use to change the world."</i>
-                                    <br><br>
-                                    <font color="#1a5276"><b>With warm regards,<br>Pradip Jadhao</b></font>
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <br>
-    <hr width="80%" size="2" color="#f39c12" noshade>
-    <br>
-
-    <!-- 
-    =====================================================
-    WHY CHOOSE US SECTION
-    Contains: Key benefits and unique selling points
-    To edit: Modify bullet points as per your school
-    =====================================================
-    -->
-    <section id="why-choose">
-        <table width="90%" cellpadding="30" cellspacing="0" align="center" bgcolor="#1a5276">
-            <tr>
-                <td align="center">
-                    <font size="5" color="#f39c12"><b>WHY CHOOSE Aniket SAINIK SCHOOL?</b></font>
-                    <br><br>
-                    <font size="3" color="#ffffff">
-                        Discover what makes us the preferred choice for quality education
-                    </font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" cellpadding="15" cellspacing="10">
-                        <tr>
-                            <!-- Column 1 -->
-                            <td width="33%" valign="top" bgcolor="#ffffff">
-                                <font size="3">
-                                    <font color="#27ae60"><b>✓</b></font> <b>SSC Affiliated Curriculum</b><br>
-                                    Recognized board with state level standards
-                                    <br><br>
-                                    
-                                    <font color="#27ae60"><b>✓</b></font> <b>Experienced Faculty</b><br>
-                                    Highly qualified and trained teachers
-                                    <br><br>
-                                    
-                                    <font color="#27ae60"><b>✓</b></font> <b>Smart Classrooms</b><br>
-                                    Technology-enabled learning environment
-                                    <br><br>
-                                    
-                                    <font color="#27ae60"><b>✓</b></font> <b>Military-Style Discipline</b><br>
-                                    Character building through structured routine
-                                </font>
-                            </td>
-                            
-                            <!-- Column 2 -->
-                            <td width="33%" valign="top" bgcolor="#ffffff">
-                                <font size="3">
-                                    <font color="#27ae60"><b>✓</b></font> <b>Sports Excellence</b><br>
-                                    Best sports facilities and coaching
-                                    <br><br>
-                                    
-                                    <font color="#27ae60"><b>✓</b></font> <b>Safe & Secure Campus</b><br>
-                                    CCTV surveillance and trained security
-                                    <br><br>
-                                    
-                                    <font color="#27ae60"><b>✓</b></font> <b>Hostel Facility</b><br>
-                                    Comfortable residential accommodation
-                                    <br><br>
-                                    
-                                    <font color="#27ae60"><b>✓</b></font> <b>Transport Services</b><br>
-                                    GPS-enabled buses covering all areas
-                                </font>
-                            </td>
-                            
-                            <!-- Column 3 -->
-                            <td width="33%" valign="top" bgcolor="#ffffff">
-                                <font size="3">
-                                    <font color="#27ae60"><b>✓</b></font> <b>Holistic Development</b><br>
-                                    Focus on mind, body, and character
-                                    <br><br>
-                                    
-                                    <font color="#27ae60"><b>✓</b></font> <b>Career Counseling</b><br>
-                                    Expert guidance for future planning
-                                    <br><br>
-                                    
-                                    <font color="#27ae60"><b>✓</b></font> <b>Co-Curricular Activities</b><br>
-                                    Music, dance, art, and more
-                                    <br><br>
-                                    
-                                    <font color="#27ae60"><b>✓</b></font> <b>Parent Engagement</b><br>
-                                    Regular PTMs and communication
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <br><br>
-
-    <!-- 
-    =====================================================
-    ACADEMICS SECTION
-    Contains: Class range, Curriculum info, Teaching approach
-    To edit: Update class levels and curriculum details
-    =====================================================
-    -->
-    <section id="academics">
-        <table width="90%" cellpadding="30" cellspacing="0" align="center">
-            <tr>
-                <td align="center">
-                    <font size="5" color="#1a5276"><b> ACADEMICS</b></font>
-                    <br><br>
-                    <font size="3" color="#7f8c8d">
-                        Comprehensive Education from Nursery to Class X
-                    </font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" cellpadding="20" cellspacing="10">
-                        <tr>
-                            <!-- Class Range -->
-                            <td width="50%" valign="top" bgcolor="#f8f9fa">
-                                <font size="4" color="#1a5276"><b> Classes Offered</b></font>
-                                <hr size="2" color="#f39c12" width="150" align="left" noshade>
-                                <font size="3">
-                                    <b>Pre-Primary Section:</b><br>
-                                    • Nursery (Age 3+)<br>
-                                    • LKG (Age 4+)<br>
-                                    • UKG (Age 5+)<br><br>
-                                    
-                                    <b>Primary Section:</b><br>
-                                    • Class I to Class V<br><br>
-                                    
-                                    <b>Middle Section:</b><br>
-                                    • Class VI to Class VIII<br><br>
-                                    
-                                    <b>Secondary Section:</b><br>
-                                    • Class IX to Class X (Board)<br><br>
-                                    
-                    
-                                </font>
-                            </td>
-                            
-                            <!-- Curriculum Details -->
-                            <td width="50%" valign="top" bgcolor="#f8f9fa">
-                                <font size="4" color="#1a5276"><b> Curriculum Framework</b></font>
-                                <hr size="2" color="#f39c12" width="150" align="left" noshade>
-                                <font size="3">
-                                    <table cellpadding="10" cellspacing="5" bgcolor="#1a5276" width="100%">
-                                        <tr>
-                                            <td align="center">
-                                                <font color="#f39c12" size="4"><b>SSC AFFILIATED</b></font><br>
-                                                <font color="#ffffff" size="2">UDISE No: 27041301714</font>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <br>
-                                    Our curriculum follows the CBSE pattern with focus on:
-                                    <br><br>
-                                    • <b>Core Subjects:</b> English, Hindi, Mathematics, Science, Social Studies<br>
-                        
-                                    • <b>Computer Education:</b> From Class III onwards<br>
-                                    • <b>Value Education:</b> Moral Science & Ethics<br>
-                                    • <b>Physical Education:</b> Mandatory for all<br>
-                                    • <b>Art & Craft:</b> Creative expression<br>
-                                    • <b>Music & Dance:</b> Cultural development
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <!-- Teaching Approach -->
-                    <table width="100%" cellpadding="25" cellspacing="0" bgcolor="#27ae60">
-                        <tr>
-                            <td align="center">
-                                <font color="#ffffff" size="4"><b>🎓 Our Teaching Approach</b></font>
-                                <br><br>
-                                <font color="#ffffff" size="3">
-                                    <b>Activity-Based Learning</b> | <b>Experiential Education</b> | 
-                                    <b>Critical Thinking Development</b> | <b>Project-Based Assessment</b>
-                                    <br><br>
-                                    We employ modern pedagogical methods including smart classrooms, digital learning tools, 
-                                    interactive sessions, practical demonstrations, and regular assessments to ensure 
-                                    comprehensive understanding of concepts.
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <br>
-    <hr width="80%" size="2" color="#f39c12" noshade>
-    <br>
-
-    <!-- 
-    =====================================================
-    HOUSE SYSTEM / DEPARTMENTS SECTION
-    Contains: House divisions, NCC, Scouts
-    To edit: Modify house names and descriptions
-    =====================================================
-    -->
-    <section id="houses">
-        <table width="90%" cellpadding="30" cellspacing="0" align="center">
-            <tr>
-                <td align="center">
-                    <font size="5" color="#1a5276"><b> HOUSE SYSTEM & DEPARTMENTS</b></font>
-                    <br><br>
-                    <font size="3" color="#7f8c8d">
-                        Building Team Spirit, Leadership, and Healthy Competition
-                    </font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <!-- Four Houses -->
-                    <table width="100%" cellpadding="20" cellspacing="10">
-                        <tr>
-                            <!-- Shivaji House -->
-                            <td width="25%" valign="top" bgcolor="#e74c3c" align="center">
-                                <font color="#ffffff" size="4"><b>🔴</b></font><br>
-                                <font color="#ffffff" size="3"><b>SHIVAJI HOUSE</b></font><br>
-                                <font color="#ffffff" size="2">
-                                    <i>"Courage & Valor"</i><br>
-                                    Red House
-                                </font>
-                            </td>
-                            
-                            <!-- Tagore House -->
-                            <td width="25%" valign="top" bgcolor="#3498db" align="center">
-                                <font color="#ffffff" size="4"><b>🔵</b></font><br>
-                                <font color="#ffffff" size="3"><b>TAGORE HOUSE</b></font><br>
-                                <font color="#ffffff" size="2">
-                                    <i>"Wisdom & Creativity"</i><br>
-                                    Blue House
-                                </font>
-                            </td>
-                            
-                            <!-- Ashoka House -->
-                            <td width="25%" valign="top" bgcolor="#27ae60" align="center">
-                                <font color="#ffffff" size="4"><b>🟢</b></font><br>
-                                <font color="#ffffff" size="3"><b>ASHOKA HOUSE</b></font><br>
-                                <font color="#ffffff" size="2">
-                                    <i>"Peace & Unity"</i><br>
-                                    Green House
-                                </font>
-                            </td>
-                            
-                            <!-- Raman House -->
-                            <td width="25%" valign="top" bgcolor="#f39c12" align="center">
-                                <font color="#000000" size="4"><b>🟡</b></font><br>
-                                <font color="#000000" size="3"><b>RAMAN HOUSE</b></font><br>
-                                <font color="#000000" size="2">
-                                    <i>"Science & Innovation"</i><br>
-                                    Yellow House
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                    <br>
-                    
-                    <!-- Departments -->
-                    <table width="100%" cellpadding="20" cellspacing="10">
-                        <tr>
-                            <!-- NCC -->
-                            <td width="33%" valign="top" bgcolor="#2c3e50" align="center">
-                                <font color="#f39c12" size="4"><b> Lakshya Carrier Academy</b></font>
-                                <br><br>
-                                <font color="#ffffff" size="3">
-                                    Active NCC unit with Army Wing for boys and girls. 
-                                    Regular camps, parades, and Republic Day participation. 
-                                    Training in discipline, leadership, and national service.
-                                </font>
-                            </td>
-                            
-                            <!-- Scouts & Guides -->
-                            <td width="33%" valign="top" bgcolor="#8e44ad" align="center">
-                                <font color="#ffffff" size="4"><b> SCOUTS & GUIDES</b></font>
-                                <br><br>
-                                <font color="#ffffff" size="3">
-                                    Bharat Scouts and Guides affiliated unit. 
-                                    Adventure camps, community service, and skill development. 
-                                    Building self-reliance and civic responsibility.
-                                </font>
-                            </td>
-                            
-                            <!-- Sports Department -->
-                            <td width="33%" valign="top" bgcolor="#16a085" align="center">
-                                <font color="#ffffff" size="4"><b> SPORTS DEPARTMENT</b></font>
-                                <br><br>
-                                <font color="#ffffff" size="3">
-                                    Professional coaching in multiple sports. 
-                                    Inter-school, Taluka-level, District- level and State-level competitions. 
-                                    Focus on physical fitness and sportsmanship.
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <br>
-    <hr width="80%" size="2" color="#f39c12" noshade>
-    <br>
-
-    <!-- 
-    =====================================================
-    HONOR & DISCIPLINE SECTION (Sainik Style)
-    Contains: Discipline code, Student council, Routine
-    To edit: Modify discipline policies as needed
-    =====================================================
-    -->
-    <section id="discipline">
-        <table width="90%" cellpadding="30" cellspacing="0" align="center" bgcolor="#2c3e50">
-            <tr>
-                <td align="center">
-                    <font size="5" color="#f39c12"><b> HONOR & DISCIPLINE</b></font>
-                    <br><br>
-                    <font size="3" color="#ffffff">
-                        The Foundation of Character Building - Sainik School Tradition
-                    </font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" cellpadding="20" cellspacing="10">
-                        <tr>
-                            <!-- Discipline Code -->
-                            <td width="50%" valign="top" bgcolor="#ffffff">
-                                <font size="4" color="#1a5276"><b> Code of Conduct</b></font>
-                                <hr size="2" color="#e74c3c" width="150" align="left" noshade>
-                                <font size="3">
-                                    <b>Our students pledge to:</b><br><br>
-                                    🔹 Maintain punctuality at all times<br>
-                                    🔹 Wear uniform with pride and discipline<br>
-                                    🔹 Respect teachers, elders, and peers<br>
-                                    🔹 Uphold honesty and integrity<br>
-                                    🔹 Follow school rules diligently<br>
-                                    🔹 Participate actively in morning assembly<br>
-                                    🔹 Keep the campus clean and green<br>
-                                    🔹 Abstain from use of mobile phones<br>
-                                    🔹 Report any misconduct immediately<br>
-                                    🔹 Represent the school with honor
-                                </font>
-                            </td>
-                            
-                            <!-- Student Council -->
-                            <td width="50%" valign="top" bgcolor="#ffffff">
-                                <font size="4" color="#1a5276"><b> Student Council</b></font>
-                                <hr size="2" color="#e74c3c" width="150" align="left" noshade>
-                                <font size="3">
-                                    <b>Leadership Positions:</b><br><br>
-                                    🎖️ <b>Head Boy</b> - Overall student leadership<br>
-                                    🎖️ <b>Head Girl</b> - Overall student leadership<br>
-                                    🎖️ <b>Sports Captain</b> - Sports activities<br>
-                                    🎖️ <b>House Captains</b> - House representation<br>
-                                    🎖️ <b>Class Monitors</b> - Classroom discipline<br>
-                                    🎖️ <b>Prefects</b> - Campus discipline<br><br>
-                                    
-                                    <i>Student leaders are selected through a democratic 
-                                    process based on merit, discipline, and leadership qualities.</i>
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <table width="100%" cellpadding="15" cellspacing="0" bgcolor="#e74c3c">
-                        <tr>
-                            <td align="center">
-                                <font color="#ffffff" size="3">
-                                    <b>SCHOOL MOTTO:</b> "Decorum , Disipline and Development" | 
-                                    <b>SCHOOL PLEDGE:</b> "To serve the nation with honor and integrity"
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <br><br>
-
-    <!-- 
-    =====================================================
-    FACILITIES SECTION
-    Contains: Labs, Sports, Library, Hostel, Transport, Medical, Security
-    To edit: Add or remove facilities, update descriptions
-    =====================================================
-    -->
-    <section id="facilities">
-        <table width="90%" cellpadding="30" cellspacing="0" align="center">
-            <tr>
-                <td align="center">
-                    <font size="5" color="#1a5276"><b> WORLD-CLASS FACILITIES</b></font>
-                    <br><br>
-                    <font size="3" color="#7f8c8d">
-                        State-of-the-Art Infrastructure for Holistic Development
-                    </font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <!-- Facilities Grid -->
-                    <table width="100%" cellpadding="15" cellspacing="10">
-                        <tr>
-                            <!-- Smart Classrooms -->
-                            <td width="25%" valign="top" align="center" bgcolor="#f8f9fa">
-                                <img src="photo/class.jpeg" 
-                                     alt="Smart Classroom" width="200" height="150">
-                                <br><br>
-                                <font size="3" color="#1a5276"><b> Smart Classrooms</b></font>
-                                <br>
-                                <font size="2">
-                                    Digital boards, projectors, and audio-visual equipment 
-                                    for interactive learning experience.
-                                </font>
-                            </td>
-                            
-                            <!-- Science Labs -->
-                            <td width="25%" valign="top" align="center" bgcolor="#f8f9fa">
-                                <img src="photo/laboutry.jpeg"
-                                     alt="Science Lab" width="200" height="150">
-                                <br><br>
-                                <font size="3" color="#1a5276"><b> Science Laboratories</b></font>
-                                <br>
-                                <font size="2">
-                                    Fully equipped Physics, Chemistry,
-                                    for practical experiments.
-                                </font>
-                            </td>
-                            
-                            <!-- Computer Lab -->
-                            <td width="25%" valign="top" align="center" bgcolor="#f8f9fa">
-                                <img src="photo/computer lab.jpeg" 
-                                     alt="Computer Lab" width="200" height="150">
-                                <br><br>
-                                <font size="3" color="#1a5276"><b> Computer Lab</b></font>
-                                <br>
-                                <font size="2">
-                                    Modern computers with high-speed internet 
-                                    and latest software for digital learning.
-                                </font>
-                            </td>
-                            
-                            <!-- Library -->
-                            <td width="25%" valign="top" align="center" bgcolor="#f8f9fa">
-                                <img src="photo/studyroom.jpeg" 
-                                     alt="Study Room" width="200" height="150">
-                                <br><br>
-                                <font size="3" color="#1a5276"><b> Study Area</b></font>
-                                <br>
-                                <font size="2">
-                                    Over 1000 books, journals, magazines, and 
-                                    digital resources for research and reading.
-                                </font>
-                            </td>
-                        </tr>
-                        <tr>
-                            <!-- Sports Ground -->
-                            <td width="25%" valign="top" align="center" bgcolor="#f8f9fa">
-                                <img src="photo/ground.jpeg" 
-                                     alt="Sports Ground" width="200" height="150">
-                                <br><br>
-                                <font size="3" color="#1a5276"><b> Sports Grounds</b></font>
-                                <br>
-                                <font size="2">
-                                    Cricket, football, Kabaddi, volleyball courts, 
-                                    athletics track, .
-                                </font>
-                            </td>
-                            
-                            <!-- Hostel -->
-                            <td width="25%" valign="top" align="center" bgcolor="#f8f9fa">
-                                <img src="photo/hostel.jpeg" 
-                                     alt="Hostel" width="200" height="150">
-                                <br><br>
-                                <font size="3" color="#1a5276"><b> Hostel Facility</b></font>
-                                <br>
-                                <font size="2">
-                                    Separate hostels for boys with 
-                                    24/7 warden supervision and home-like ambiance.
-                                </font>
-                            </td>
-                            
-                            <!-- Transport -->
-                            <td width="25%" valign="top" align="center" bgcolor="#f8f9fa">
-                                <img src="photo/transport.jpeg"
-                                     alt="Transport" width="200" height="150">
-                                <br><br>
-                                <font size="3" color="#1a5276"><b> Transportation</b></font>
-                                <br>
-                                <font size="2">
-                                    Fleet of GPS-enabled buses covering 
-                                    all major routes with trained drivers.
-                                </font>
-                            </td>
-                            
-                            <!-- Medical Facility -->
-                            <td width="25%" valign="top" align="center" bgcolor="#f8f9fa">
-                                <img src="photo/medical.jpeg" 
-                                     alt="Medical Facility" width="200" height="150">
-                                <br><br>
-                                <font size="3" color="#1a5276"><b> Medical Center</b></font>
-                                <br>
-                                <font size="2">
-                                    In-campus 
-                                    first-aid facilities, and tie-up hospitals.
-                                </font>
-                            </td>
-                        </tr>
-                        <tr>
-                           
-                            
-                            <!-- Security -->
-                            <td width="25%" valign="top" align="center" bgcolor="#f8f9fa">
-                                <img src="photo/security.jpeg" 
-                                     alt="Security" width="200" height="150">
-                                <br><br>
-                                <font size="3" color="#1a5276"><b> Security System</b></font>
-                                <br>
-                                <font size="2">
-                                    24/7 CCTV surveillance, trained guards, 
-                                    biometric entry, and secure campus.
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <br>
-    <hr width="80%" size="2" color="#f39c12" noshade>
-    <br>
-
-    <!-- 
-    =====================================================
-    ACTIVITIES & EVENTS SECTION
-    Contains: Annual functions, Sports, Cultural events
-    To edit: Update event names and descriptions
-    =====================================================
-    -->
-    <section id="events">
-        <table width="90%" cellpadding="30" cellspacing="0" align="center">
-            <tr>
-                <td align="center">
-                    <font size="5" color="#1a5276"><b> ACTIVITIES & EVENTS</b></font>
-                    <br><br>
-                    <font size="3" color="#7f8c8d">
-                        Year-Round Celebrations and Competitions
-                    </font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" cellpadding="20" cellspacing="10">
-                        <tr>
-                            <!-- Annual Day -->
-                            <td width="33%" valign="top" bgcolor="#e74c3c" align="center">
-                                <font color="#ffffff" size="4"><b> ANNUAL DAY</b></font>
-                                <br><br>
-                                <font color="#ffffff" size="2">
-                                    Grand celebration featuring cultural performances, 
-                                    drama, dance, music, and prize distribution. 
-                                    A showcase of student talent and achievements.
-                                </font>
-                            </td>
-                            
-                            <!-- Sports Day -->
-                            <td width="33%" valign="top" bgcolor="#27ae60" align="center">
-                                <font color="#ffffff" size="4"><b> SPORTS DAY</b></font>
-                                <br><br>
-                                <font color="#ffffff" size="2">
-                                    Athletic meet with track and field events, 
-                                    march past, PT display, and inter-house 
-                                    competitions. Promoting sportsmanship.
-                                </font>
-                            </td>
-                            
-                            <!-- Republic Day -->
-                            <td width="33%" valign="top" bgcolor="#3498db" align="center">
-                                <font color="#ffffff" size="4"><b> REPUBLIC DAY</b></font>
-                                <br><br>
-                                <font color="#ffffff" size="2">
-                                    Flag hoisting ceremony, 
-                                    patriotic songs, and cultural program celebrating 
-                                    our nation's Constitution.
-                                </font>
-                            </td>
-                        </tr>
-                        <tr>
-                            <!-- Science Exhibition -->
-                            <td width="33%" valign="top" bgcolor="#9b59b6" align="center">
-                                <font color="#ffffff" size="4"><b> SCIENCE EXHIBITION</b></font>
-                                <br><br>
-                                <font color="#ffffff" size="2">
-                                    Students showcase innovative projects, 
-                                    working models, and scientific experiments. 
-                                    Fostering curiosity and creativity.
-                                </font>
-                            </td>
-                            
-                            <!-- Cultural Fest -->
-                            <td width="33%" valign="top" bgcolor="#e67e22" align="center">
-                                <font color="#ffffff" size="4"><b>CULTURAL FEST</b></font>
-                                <br><br>
-                                <font color="#ffffff" size="2">
-                                    Inter-school competition featuring dance, 
-                                    music, drama, art, debate, and quiz. 
-                                    Celebrating diverse talents.
-                                </font>
-                            </td>
-                            
-                            <!-- Teachers Day -->
-                            <td width="33%" valign="top" bgcolor="#1abc9c" align="center">
-                                <font color="#ffffff" size="4"><b> TEACHERS' DAY</b></font>
-                                <br><br>
-                                <font color="#ffffff" size="2">
-                                    Students pay tribute to their teachers 
-                                    through performances, speeches, and gifts. 
-                                    Honoring our mentors.
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                    
-                    <br>
-                    
-                    <!-- More Events List -->
-                    <table width="100%" cellpadding="15" cellspacing="0" bgcolor="#f8f9fa">
-                        <tr>
-                            <td align="center">
-                                <font size="3" color="#1a5276"><b>Other Events:</b></font>
-                                <font size="3">
-                                    Independence Day | Children's Day | Founder's Day | 
-                                    Parent-Teacher Meet | Educational Excursions | 
-                                    Inter-House Competitions | Debate Competitions | 
-                                    Quiz Competitions | Art Exhibition | MORE ON....    
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <br>
-    <hr width="80%" size="2" color="#f39c12" noshade>
-    <br>
-
-    <!-- 
-    =====================================================
-    ACHIEVEMENTS & AWARDS SECTION
-    Contains: Academic results, Awards, Recognition
-    To edit: Update achievements and statistics
-    =====================================================
-    -->
-    <section id="achievements">
-        <table width="90%" cellpadding="30" cellspacing="0" align="center" bgcolor="#f39c12">
-            <tr>
-                <td align="center">
-                    <font size="5" color="#ffffff"><b> ACHIEVEMENTS & AWARDS</b></font>
-                    <br><br>
-                    <font size="3" color="#ffffff">
-                        Celebrating Excellence in Academics, Sports, and Beyond
-                    </font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" cellpadding="20" cellspacing="10">
-                        <tr>
-                            <!-- Board Results -->
-                            <td width="33%" valign="top" bgcolor="#ffffff" align="center">
-                                <font size="4" color="#27ae60"><b>BOARD RESULTS 2024</b></font>
-                                <hr size="2" color="#27ae60" width="100" noshade>
-                                <font size="3">
-                                    <b>Class X:</b> 100% Pass Rate<br>
-                                    School Topper: 97.2%<br><br>
-                                    
-                                </font>
-                            </td>
-                            
-                            <!-- Competitive Exams
-                            <td width="33%" valign="top" bgcolor="#ffffff" align="center">
-                                <font size="4" color="#3498db"><b>🎓 COMPETITIVE SUCCESS</b></font>
-                                <hr size="2" color="#3498db" width="100" noshade>
-                                <font size="3">
-                                    <b>JEE Main:</b>  Qualifiers<br>
-                                    <b>NEET:</b> 12 Qualifiers<br>
-                                    <b>NDA:</b> 8 Selections<br>
-                                    <b>NTSE:</b> 5 Scholars<br>
-                                    <b>Olympiads:</b> 20+ Medals<br>
-                                    <b>KVPY:</b> 3 Fellows
-                                </font>
-                            </td> -->
-                            
-                            <!-- Sports Achievements
-                            <td width="33%" valign="top" bgcolor="#ffffff" align="center">
-                                <font size="4" color="#e74c3c"><b>🏅 SPORTS GLORY</b></font>
-                                <hr size="2" color="#e74c3c" width="100" noshade>
-                                <font size="3">
-                                    <b>State Level:</b> 25+ Medals<br>
-                                    <b>National Level:</b> 10 Medals<br>
-                                    <b>CBSE Clusters:</b> Champions<br>
-                                    <b>District Athletics:</b> Winners<br>
-                                    <b>Cricket Tournament:</b> Runners-up<br>
-                                    <b>Football Championship:</b> Winners
-                                </font>
-                            </td> -->
-                        </tr>
-                    </table>
-                    
-                    <br>
-                    
-                    <!-- Awards Badges -->
-                    <table width="100%" cellpadding="15" cellspacing="0" bgcolor="#2c3e50">
-                        <tr>
-                            <td align="center">
-                                <font color="#f39c12" size="3"><b>🏆 RECOGNITIONS & AWARDS:</b></font>
-                                <font color="#ffffff" size="3">
-                                    Best School Award (District) | 
-                                    Green School Certification | 
-     
-                                    Excellence in Education | 
-                                    Sports Academy Award
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <br><br>
-
-    <!-- 
-    =====================================================
-    GALLERY SECTION
-    Contains: School photos in grid layout
-    To edit: Replace placeholder images with real photos
-    =====================================================
-    -->
-    <section id="gallery">
-        <table width="90%" cellpadding="30" cellspacing="0" align="center">
-            <tr>
-                <td align="center">
-                    <font size="5" color="#1a5276"><b>📸 PHOTO GALLERY</b></font>
-                    <br><br>
-                    <font size="3" color="#7f8c8d">
-                        Glimpses of Life at Aniket Sainik School
-                    </font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <!-- Gallery Grid -->
-                    <table width="100%" cellpadding="5" cellspacing="10">
-                        <tr>
-                            <td width="25%" align="center">
-                                <img src="photo/ground.jpeg"
-                                     alt="Campus View" width="100%" height="180">
-                                <br><font size="2">Campus View</font>
-                            </td>
-                            <td width="25%" align="center">
-                                <img src="photo/class.jpeg" 
-                                     alt="Classroom" width="100%" height="180">
-                                <br><font size="2">Smart Classroom</font>
-                            </td>
-                            <td width="25%" align="center">
-                                <img src="photo/sportsday.jpeg" 
-                                     alt="Sports Day" width="100%" height="180">
-                                <br><font size="2">Sports Day</font>
-                            </td>
-                            <td width="25%" align="center">
-                                <img src="photo/annual.jpeg"
-                                     alt="Annual Day" width="100%" height="180">
-                                <br><font size="2">Annual Day</font>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="25%" align="center">
-                                <img src="photo/laboutry.jpeg" 
-                                     alt="Science Lab" width="100%" height="180">
-                                <br><font size="2">Science Lab</font>
-                            </td>
-                            <td width="25%" align="center">
-                                <img src="photo/studyroom.jpeg" 
-                                     alt="Study area" width="100%" height="180">
-                                <br><font size="2">Library</font>
-                            </td>
-                            <td width="25%" align="center">
-                                <img src="photo/parade.jpeg" 
-                                     alt="Students Parade" width="100%" height="180">
-                                <br><font size="2"> Students Parade</font>
-                            </td>
-                            <!-- <td width="25%" align="center">
-                                <img src="https://via.placeholder.com/250x180/16a085/ffffff?text=Cultural+Event" 
-                                     alt="Cultural Event" width="100%" height="180">
-                                <br><font size="2">Cultural Event</font>
-                            </td> -->
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <br>
-    <hr width="80%" size="2" color="#f39c12" noshade>
-    <br>
-
-    <!-- 
-    =====================================================
-    ADMISSION SECTION
-    Contains: Steps, Eligibility, Documents, Enquiry form
-    To edit: Update admission process and requirements
-    =====================================================
-    -->
-    
-
-      
-
-            <tr>
-                <td>
-                    <table width="100%" cellpadding="20" cellspacing="10">
-                        <tr>
-                            <!-- Admission Steps -->
-                            <td width="40%" valign="top" bgcolor="#f8f9fa">
-                                <font size="4" color="#1a5276"><b>📋 Admission Steps</b></font>
-                                <hr size="2" color="#27ae60" width="150" align="left" noshade>
-                                <font size="3">
-                                    <table cellpadding="10">
-                                        <tr>
-                                            <td bgcolor="#27ae60" align="center"><font color="#ffffff"><b>1</b></font></td>
-                                            <td><b>Collect Prospectus</b><br>From school office </td>
-                                        </tr>
-                                        <tr>
-                                            <td bgcolor="#3498db" align="center"><font color="#ffffff"><b>2</b></font></td>
-                                            <td><b>Fill Application Form</b><br>Complete all sections accurately</td>
-                                        </tr>
-                                        <tr>
-                                            <td bgcolor="#e67e22" align="center"><font color="#ffffff"><b>3</b></font></td>
-                                            <td><b>Submit Documents</b><br>Attach all required documents</td>
-                                        </tr>
-                                        <tr>
-                                            <td bgcolor="#9b59b6" align="center"><font color="#ffffff"><b>4</b></font></td>
-                                            <td><b>Entrance Test</b><br>Appear for interview</td>
-                                        </tr>
-                                        <tr>
-                                            <td bgcolor="#e74c3c" align="center"><font color="#ffffff"><b>5</b></font></td>
-                                            <td><b>Confirmation</b><br>Pay fees and confirm admission</td>
-                                        </tr>
-                                    </table>
-                                </font>
-                            </td>
-                            
-                            <!-- Eligibility & Documents -->
-                            <td width="60%" valign="top">
-                                <!-- Eligibility -->
-                                <table width="100%" cellpadding="15" cellspacing="0" bgcolor="#1a5276">
-                                    <tr>
-                                        <td>
-                                            <font color="#f39c12" size="4"><b>✅ Eligibility Criteria</b></font>
-                                            <br><br>
-                                            <font color="#ffffff" size="3">
-                                                • <b>Nursery:</b> Age 3+ years as on 31st March<br>
-                                                • <b>Class I:</b> Age 5+ years as on 31st March<br>
-                                                • <b>Class II-VIII:</b> Passed previous class from recognized school<br>
-                                                
-                                            </font>
-                                        </td>
-                                    </tr>
-                                </table>
-                                
-                                <br>
-                                
-                                <!-- Documents Required -->
-                                <table width="100%" cellpadding="15" cellspacing="0" bgcolor="#27ae60">
-                                    <tr>
-                                        <td>
-                                            <font color="#ffffff" size="4"><b>📄 Documents Required</b></font>
-                                            <br><br>
-                                            <font color="#ffffff" size="3">
-                                                ✓ Birth Certificate (Original + Copy)<br>
-                                                ✓ Aadhar Card of Student and Parents<br>
-                                                ✓ Previous School Transfer Certificate<br>
-                                                ✓ Report Card of Last Class Attended<br>
-                                                ✓ Passport Size Photographs (6 copies)<br>
-                                                ✓ Caste Certificate (if applicable)<br>
-                                                ✓ Medical Fitness Certificate
-                                            </font>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                    
-                    <br>
-                    
-                    <!-- Action Buttons -->
-                    <table width="100%" cellpadding="20" cellspacing="0" bgcolor="#2c3e50" align="center">
-                        <tr>
-                            <td align="center">
-                                <table cellpadding="0" cellspacing="15">
-                                    <tr>
-                                        <!-- <td bgcolor="#e74c3c" align="center">
-                                            <a href="#enquiry">
-                                                <font color="#ffffff" size="3">
-                                                    <b>&nbsp;&nbsp;📝 ONLINE ENQUIRY&nbsp;&nbsp;</b>
-                                                </font>
-                                            </a>
-                                        </td> -->
-                                       
-                                        <td bgcolor="#3498db" align="center">
-                                            <a href="#contact">
-                                                <font color="#ffffff" size="3">
-                                                    <b>&nbsp;&nbsp;📞 CALL US NOW&nbsp;&nbsp;</b>
-                                                </font>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <br>
-    <hr width="80%" size="2" color="#f39c12" noshade>
-    <br>
-
-    <!-- 
-    =====================================================
-    FACULTY SECTION
-    Contains: Teacher profiles with photos
-    To edit: Replace placeholder data with actual faculty info
-    =====================================================
-    -->
- <style>
-.faculty-img{
-    width:150px;
-    height:180px;
-    object-fit:cover;
-    border-radius:50%;
-    border:3px solid #1a5276;
-}
-.faculty-card{
-    background:#f8f9fa;
-    padding:15px;
-}
-</style>
-
-<section id="faculty">
-<table width="90%" cellpadding="30" cellspacing="0" align="center">
-
-<tr>
-<td align="center">
-    <font size="5" color="#1a5276"><b>OUR DISTINGUISHED FACULTY</b></font><br><br>
-    <font size="3" color="#7f8c8d">
-        Experienced and Dedicated Educators Shaping Young Minds
-    </font>
-</td>
-</tr>
-
-<tr>
-<td>
-<table width="100%" cellpadding="15" cellspacing="15">
-
-<!-- ===== ROW 1 ===== -->
-<tr>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="photo/principalimage.jpeg"><br></b><br>Principal</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/Dipak Rajput .jpeg"><br></b><br>Science</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/Amol Tambat.jpeg"><br></b><br>English</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/Swati Tale.jpeg"><br></b><br>English</td>
-</tr>
-
-<!-- ===== ROW 2 ===== -->
-<tr>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/Vijay Jadhav.jpeg"><br></b><br>History</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/Varsha Gaikwad.jpeg"><br></b><br>Geography</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/Sunhash Salve.jpeg"><br></b><br>Maths</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/Minal Khillare.jpeg"><br></b><br>Arts</td>
-</tr>
-
-<!-- ===== ROW 3 ===== -->
-<tr>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/Yasmin Hussain.jpeg"><b></b></b><br>Hindi</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/Sulochana Narwade.jpeg"><br></b><br>Maths</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/Viinita deshmukh.jpeg"><br></b><br>Civics</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/Harshali Bahekar.jpeg"><br></b><br>Maths</td>
-</tr>
-
-<!-- ===== ROW 4 ===== -->
-<tr>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/shinde madam.jpeg"><br></b><br>  Marathi</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/Satish Kaluse.jpeg"><br></b><br>History</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/physical trainer.jpeg"><br></b><br>NCC</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/Jyoti Kholagadge.jpeg"><br></b><br>Computer</td>
-</tr>
-<tr>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="Teachers/mangesh sarkate.jpeg"><br></b><br>Library</td>
-<!-- <td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="https://via.placeholder.com/300?text=T18"><br></b><br>Music</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="https://via.placeholder.com/300?text=T19"><br></b><br>PT</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="https://via.placeholder.com/300?text=T20"><br></b><br>Accounts</td> -->
-</tr>
-
-<!-- ===== ROW 6 (25 teachers complete) =====
-<tr>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="https://via.placeholder.com/300?text=T21"><br></b><br>Economics</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="https://via.placeholder.com/300?text=T22"><br></b><br>Political Science</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="https://via.placeholder.com/300?text=T23"><br></b><br>Psychology</td>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="https://via.placeholder.com/300?text=T24"><br><br></b><br>Sociology</td>
-</tr> -->
-
-<!-- <tr>
-<td width="25%" align="center" class="faculty-card"><img class="faculty-img" src="https://via.placeholder.com/300?text=T25"><br></b><br>Assistant Teacher</td>
-<td width="25%"></td>
-<td width="25%"></td>
-<td width="25%"></td>
-</tr> -->
-
-</table>
-</td>
-</tr>
-
-</table>
-</section>
-
-
-
-    <br>
-    <hr width="80%" size="2" color="#f39c12" noshade>
-    <br>
-
-    <!-- 
-    =====================================================
-    STUDENT LIFE SECTION
-    Contains: Daily routine, Clubs, Activities
-    To edit: Modify schedule and club information
-    =====================================================
-    -->
-    <section id="student-life">
-        <table width="90%" cellpadding="30" cellspacing="0" align="center">
-            <tr>
-                <td align="center">
-                    <font size="5" color="#1a5276"><b>STUDENT LIFE</b></font>
-                    <br><br>
-                    <font size="3" color="#7f8c8d">
-                        A Day in the Life of a Aniket Sainik School Student
-                    </font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" cellpadding="20" cellspacing="10">
-                        <tr>
-                            <!-- Daily Routine -->
-                            <td width="40%" valign="top" bgcolor="#1a5276">
-                                <font color="#f39c12" size="4"><b>⏰ Daily Routine</b></font>
-                                <br><br>
-                                <font color="#ffffff" size="3">
-                                    <table cellpadding="5">
-                                        <tr><td><font color="#f39c12">06:00 AM</font></td><td><font color="#ffffff">- Wake Up Call</font></td></tr>
-                                        <tr><td><font color="#f39c12">06:30 AM</font></td><td><font color="#ffffff">- Physical Training/Yoga</font></td></tr>
-                                        <tr><td><font color="#f39c12">08:30 AM</font></td><td><font color="#ffffff">- Breakfast</font></td></tr>
-                                        <tr><td><font color="#f39c12">10:00 AM</font></td><td><font color="#ffffff">- Morning Assembly</font></td></tr>
-                                        <tr><td><font color="#f39c12">10:30 AM</font></td><td><font color="#ffffff">- Classes Begin</font></td></tr>
-                                        <tr><td><font color="#f39c12">12:00 PM</font></td><td><font color="#ffffff">- Lunch Break</font></td></tr>
-                                        <tr><td><font color="#f39c12">12:30 PM</font></td><td><font color="#ffffff">- Afternoon Classes</font></td></tr>
-                                        <tr><td><font color="#f39c12">06:00 PM</font></td><td><font color="#ffffff">- Self-Study/Prep</font></td></tr>
-                                        <tr><td><font color="#f39c12">07:30 PM</font></td><td><font color="#ffffff">- Dinner</font></td></tr>
-                                        <tr><td><font color="#f39c12">12:00 PM</font></td><td><font color="#ffffff">- Lights Off</font></td></tr>
-                                    </table>
-                                </font>
-                            </td>
-                            
-                            <!-- Clubs & Societies -->
-                            <td width="60%" valign="top">
-                                <table width="100%" cellpadding="15" bgcolor="#f8f9fa">
-                                    
-                                </table>
-                                <table width="100%" cellpadding="10" cellspacing="5">
-                                    
-                                </table>
-                                <br>
-                                <table width="100%" cellpadding="15" bgcolor="#27ae60">
-                                    <tr>
-                                        <td align="center">
-                                            <font color="#ffffff" size="3">
-                                                <b>Sports Offered:</b> Cricket | Football  | 
-                                                Volleyball | Badminton |  | Athletics | 
-                                                Running | Kabaddi | Kho-Kho
-                                            </font>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <br>
-    <hr width="80%" size="2" color="#f39c12" noshade>
-    <br>
-
-    <!-- 
-    =====================================================
-    TESTIMONIALS SECTION
-    Contains: Parent and student feedback
-    To edit: Replace placeholder testimonials with real ones
-    =====================================================
-    -->
-    <section id="testimonials">
-        <table width="90%" cellpadding="30" cellspacing="0" align="center" bgcolor="#f8f9fa">
-            <tr>
-                <td align="center">
-                    <font size="5" color="#1a5276"><b> WHAT PARENTS & STUDENTS SAY</b></font>
-                    <br><br>
-                    <font size="3" color="#7f8c8d">
-                        Testimonials from Our School Community
-                    </font>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table width="100%" cellpadding="20" cellspacing="15">
-                        <tr>
-                            <!-- Testimonial 1 -->
-                            <td width="33%" valign="top" bgcolor="#ffffff">
-                                <font size="3">
-                                    <i>"Sending my son to Aniket Sainik School was the best decision we made. 
-                                    The discipline, values, and quality education he received here has 
-                                    transformed him into a confident young man. The teachers are incredibly 
-                                    dedicated and caring."</i>
-                                </font>
-                                <br><br>
-                                <font size="2" color="#1a5276"><b>- Mr. Arjun Jadhao</b></font><br>
-                                <font size="2" color="#7f8c8d">Parent of Class X Student</font>
-                            </td>
-                            
-                            <!-- Testimonial 2 -->
-                            <td width="33%" valign="top" bgcolor="#ffffff">
-                                <font size="3">
-                                    <i>"The school has excellent infrastructure and provides ample opportunities 
-                                    for all-round development. My daughter excelled in both academics and 
-                                    extracurricular activities. The NCC training gave her confidence and 
-                                    leadership skills."</i>
-                                </font>
-                                <br><br>
-                                <font size="2" color="#1a5276"><b>- Mrs. Devanand Shinde</b></font><br>
-                                <font size="2" color="#7f8c8d">Parent</font>
-                            </td>
-                            
-                            <!-- Testimonial 3 -->
-                            <td width="33%" valign="top" bgcolor="#ffffff">
-                                <font size="3">
-                                    <i>"My years at Aniket Sainik School were the most memorable. The 
-                                    combination of academics, sports, and discipline prepared me well 
-                                    for my career in the Indian Army. I'm forever grateful to my teachers 
-                                    and this institution."</i>
-                                </font>
-                                <br><br>
-                                <font size="2" color="#1a5276"><b>- Nikita Gawai</b></font><br>
-                                <font size="2" color="#7f8c8d">Alumni, Batch of 2018</font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </section>
-
-    <br>
-    <hr width="80%" size="2" color="#f39c12" noshade>
-    <br>
-
-    <!-- 
-    =====================================================
-    CONTACT SECTION
-    Contains: Map, Address, Phone, Email, Enquiry Form
-    To edit: Update contact details and embed actual Google Map
-    =====================================================
-    -->
-
-     <section id="admission">
-    <table width="90%" cellpadding="30" cellspacing="0" align="center">
-        <tr>
-            <td align="center">
-                <!-- Admission Open Badge -->
-                <table cellpadding="15" cellspacing="0" bgcolor="#e74c3c">
-                    <tr>
-                        <td align="center">
-                            <font color="#ffffff" size="5">
-                                <b>🎓 ADMISSIONS 2026–27 NOW OPEN!</b>
-                            </font>
-                        </td>
-                    </tr>
-                </table>
-
-                <br><br>
-
-                <font size="5" color="#1a5276"><b> ADMISSION ENQUIRY</b></font>
-                <br><br>
-
-                <font size="3" color="#7f8c8d">
-                    Join the Aniket Sainik School Family – Limited Seats Available
-                </font>
-
-                <br><br><br>
-
-                <!-- Google Form Link Button -->
-                <a 
-                    href="https://docs.google.com/forms/d/e/1FAIpQLScIZYhmkI2l-FdTnc1GeQFVTwpl7BZBwPzkr9msE-UvLxR1ww/viewform?usp=dialog"
-                    target="_blank"
-                    style="
-                        background-color:#1a5276;
-                        color:#ffffff;
-                        padding:15px 30px;
-                        text-decoration:none;
-                        font-size:18px;
-                        border-radius:8px;
-                        display:inline-block;
-                    ">
-                     Click Here to Book Appointment
-                </a>
-
-            </td>
-        </tr>
-    </table>
-</section>
-    <section id="contact">
-    <table width="90%" cellpadding="30" cellspacing="0" align="center">
-        <tr>
-            <td align="center">
-                <font size="5" color="#1a5276"><b>📍 CONTACT US</b></font>
-                <br><br>
-                <font size="3" color="#7f8c8d">
-                    Get in Touch with Aniket Sainik School
-                </font>
-            </td>
-        </tr>
-
-        <tr>
-            <td align="center">
-                <!-- Map & Address -->
-                <table width="80%" cellpadding="20" cellspacing="10">
-                    <tr>
-                        <td valign="top">
-                            <!-- Map -->
-                            <a href="https://www.google.com/maps/search/?api=1&query=Aniket+Sainik+School+Sakharkherda+Buldhana"
-   target="_blank"
-   style="
-        display:block;
-        text-align:center;
-        padding:20px;
-        background-color:#ecf0f1;
-        border:2px dashed #1a5276;
-        text-decoration:none;
-        border-radius:10px;
-   ">
-    <font size="4" color="#1a5276"><b> View School Location on Google Maps</b></font><br><br>
-    <font size="2" color="#7f8c8d">
-        Click here to open directions in Google Maps
-    </font>
-</a>
-
-                            <br><br>
-
-                            <!-- Address -->
-                            <table width="100%" cellpadding="15" bgcolor="#1a5276">
-                                <tr>
-                                    <td>
-                                        <font color="#f39c12" size="4"><b>📍 Address</b></font><br>
-                                        <font color="#ffffff" size="3">
-                                            Aniket Sainik School<br>
-                                            Sakharkherda, Sindkhed Raja,<br>
-                                            Near Sakharkherda – Shendurjan Road,<br>
-                                            Buldhana – 443202<br>
-                                            Maharashtra, India
-                                        </font>
-                                    </td>
-                                </tr>
-                            </table>
-
-                            <br>
-
-                            <!-- Contact Details -->
-                            <table width="100%" cellpadding="15" bgcolor="#27ae60">
-                                <tr>
-                                    <td>
-                                        <font color="#ffffff" size="3">
-                                            <b>📞 Phone:</b> +91-8237372626, +91-7447622626, +91-9623361291<br>
-                                            <b>📧 Email:</b> aniketsainikschool1@gmail.com<br>
-                                            <b>🌐 Website:</b> www.aniketsainikschool1.<br>
-                                            <b>⏰ Office Hours:</b> Mon–Sat, 10:00 AM – 3:00 PM
-                                        </font>
-                                    </td>
-                                </tr>
-                            </table>
-
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-</section>
-
-
-    <br><br>
-
-    <!-- 
-    =====================================================
-    FOOTER SECTION
-    
-    <footer>
-        <!-- Pre-Footer - Quick Links -->
-        <table width="100%" cellpadding="30" cellspacing="0" bgcolor="#2c3e50">
-            <tr>
-                <!-- Quick Links -->
-                <td width="25%" valign="top">
-                    <font color="#f39c12" size="4"><b>Quick Links</b></font>
-                    <br><br>
-                    <font color="#ffffff" size="2">
-                        <a href="#home"><font color="#bdc3c7">Home</font></a><br><br>
-                        <a href="#about"><font color="#bdc3c7">About Us</font></a><br><br>
-                        <a href="#academics"><font color="#bdc3c7">Academics</font></a><br><br>
-                        <a href="#admission"><font color="#bdc3c7">Admissions</font></a><br><br>
-                        <a href="#gallery"><font color="#bdc3c7">Gallery</font></a><br><br>
-                        <a href="#contact"><font color="#bdc3c7">Contact Us</font></a>
-                    </font>
-                </td>
-                
-                <!-- Important Info -->
-                <td width="25%" valign="top">
-                    <font color="#f39c12" size="4"><b>Important Info</b></font>
-                    <br><br>
-                    <font color="#ffffff" size="2">
-                        <a href="#"><font color="#bdc3c7">Fee Structure</font></a><br><br>
-                        <a href="Aniket Sainik School Annual plan.pdf"><font color="#bdc3c7">School Calendar</font></a><br><br>
-                        <a href="#"><font color="#bdc3c7">Exam Schedule</font></a><br><br>
-                        <a href="Aniket Sainik School Holidays.docx"><font color="#bdc3c7">Holiday List</font></a><br><br>
-                        <a href="#"><font color="#bdc3c7">School Rules</font></a><br><br>
-                        <!-- <a href="#"><font color="#bdc3c7">Downloads</font></a> -->
-                    </font>
-                </td>
-                
-                <!-- Affiliation -->
-                <td width="25%" valign="top">
-                    <font color="#f39c12" size="4"><b>Affiliation</b></font>
-                    <br><br>
-                    <font color="#ffffff" size="2">
-                        <b>UDISRE No -</b> 27041301714<br><br>
-                        <b>Index No - </b> 04.05.045<br><br>
-                        <b>Established:</b> 2014<br><br>
-                        <b>Category:</b> Co-Educational<br><br>
-                        <b>Medium:</b> English<br><br>
-                        <b>Type:</b> Day & Boarding
-                    </font>
-                </td>
-                
-                <!-- Social Media -->
-                <td width="25%" valign="top">
-                    <font color="#f39c12" size="4"><b>Connect With Us</b></font>
-                    <br><br>
-                    <font color="#ffffff" size="2">
-                        <a href="https://www.facebook.com/share/1D35LxcTpr/"><font color="#bdc3c7">📘 Facebook</font></a><br><br>
-                        <a href="https://www.instagram.com/aniket_sainik_school?igsh=MXV3NXhuc2Z1MnBhOA=="><font color="#bdc3c7">📸 Instagram</font></a><br><br>
-                       
-                        <a href="#"><font color="#bdc3c7">▶️ YouTube</font></a><br><br>
-                       
-                    </font>
-                </td>
-            </tr>
-        </table>
-        
-        <!-- Bottom Footer - Copyright -->
-        <table width="100%" cellpadding="15" cellspacing="0" bgcolor="#1a252f">
-            <tr>
-                <td width="50%" align="left">
-                    <font color="#7f8c8d" size="2">
-                        © 2025 Aniket Sainik School. All Rights Reserved.
-                    </font>
-                </td>
-                
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <font color="#7f8c8d" size="2">
-                         Education
-                    </font>
-                </td>
-            </tr>
-        </table>
-    </footer>
-
-    <!-- 
-    =====================================================
-    END OF WEBSITE
-    =====================================================
-    
-    EDITING GUIDE:
-    1. To change school name: Search for "Sainik Public School"
-    2. To update contact: Search for phone numbers and email
-    3. To change colors: Modify bgcolor values in tables
-    4. To add images: Replace placeholder URLs with actual image URLs
-    5. To edit content: Find section comments and modify text
-    
-    PLACEHOLDER IMAGE REPLACEMENT:
-    - Replace all "via.placeholder.com" URLs with actual school photos
-    - Recommended image sizes are mentioned in each placeholder
-    
-    For any questions or support, contact your web developer.
-    =====================================================
-    -->
-
+<body class="bg-white text-slate-800 font-sans">
+  <!-- Top Bar -->
+  <header class="bg-sky-900 text-white text-xs sm:text-sm">
+    <div class="max-w-6xl mx-auto px-4 py-2 flex flex-col sm:flex-row gap-2 sm:gap-0 sm:items-center justify-between">
+      <div>
+        <div><span class="font-semibold">📞 Phone:</span> +91-8237372626 / 7447622626 / 9623361291</div>
+        <div><span class="font-semibold">📧 Email:</span> aniketsainikschool1@gmail.com</div>
+      </div>
+      <div class="flex flex-col items-center gap-2 sm:gap-3">
+        <span class="bg-red-600 text-white text-[11px] sm:text-xs font-semibold px-3 py-1 rounded-full text-center whitespace-nowrap">
+          🎓 ADMISSION 2026-27 OPEN - APPLY NOW!
+        </span>
+        <div class="flex items-center gap-3 text-xs">
+          <a href="https://www.facebook.com/share/1D35LxcTpr/" target="_blank" class="hover:text-amber-400">Facebook</a>
+          <span class="hidden sm:inline">|</span>
+          <a href="https://www.instagram.com/aniket_sainik_school?igsh=MXV3NXhuc2Z1MnBhOA==" target="_blank" class="hover:text-amber-400">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="bg-slate-900 text-white sticky top-0 z-40 shadow-md">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="flex items-center gap-3">
+          <img src="photo/schoollogo.jpeg" alt="School Logo" class="w-12 h-12 rounded-full object-cover" />
+          <div class="leading-tight">
+            <div class="text-amber-400 font-bold text-sm sm:text-base">ANIKET SAINIK SCHOOL</div>
+            <div class="text-[11px] text-slate-300">Building Future Leaders Since 2014</div>
+          </div>
+        </a>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex gap-5 text-xs lg:text-sm font-semibold">
+          <a href="#home" class="hover:text-amber-400">HOME</a>
+          <a href="#about" class="hover:text-amber-400">ABOUT</a>
+          <a href="#academics" class="hover:text-amber-400">ACADEMICS</a>
+          <a href="#facilities" class="hover:text-amber-400">FACILITIES</a>
+          <a href="#gallery" class="hover:text-amber-400">GALLERY</a>
+          <a href="#admission" class="hover:text-amber-400">ADMISSION</a>
+          <a href="#contact" class="hover:text-amber-400">CONTACT</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <button id="navToggle" class="md:hidden p-2 rounded hover:bg-slate-800 focus:outline-none" aria-label="Toggle navigation">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-800 bg-slate-900/95">
+      <div class="px-4 py-3 flex flex-col gap-2 text-sm">
+        <a href="#home" class="py-1 hover:text-amber-400">HOME</a>
+        <a href="#about" class="py-1 hover:text-amber-400">ABOUT</a>
+        <a href="#academics" class="py-1 hover:text-amber-400">ACADEMICS</a>
+        <a href="#facilities" class="py-1 hover:text-amber-400">FACILITIES</a>
+        <a href="#gallery" class="py-1 hover:text-amber-400">GALLERY</a>
+        <a href="#admission" class="py-1 hover:text-amber-400">ADMISSION</a>
+        <a href="#contact" class="py-1 hover:text-amber-400">CONTACT</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-bg text-white">
+    <div class="max-w-4xl mx-auto px-4 py-16 sm:py-20 lg:py-28 text-center">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-amber-400 tracking-wide">
+        SHAPING TOMORROW'S LEADERS TODAY
+      </h1>
+      <p class="mt-4 text-base sm:text-lg font-medium">Decorum | Discipline | Growth</p>
+      <p class="mt-4 text-sm sm:text-base text-slate-200">
+        A premier SSC affiliated institution dedicated to nurturing young minds with a perfect blend of
+        academic excellence and military discipline.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#admission" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-red-600 hover:bg-red-700 text-sm sm:text-base font-semibold shadow-lg">
+          📝 APPLY NOW
+        </a>
+        <a href="#about" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-sm sm:text-base font-semibold shadow-lg">
+          🔍 EXPLORE SCHOOL
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-5xl mx-auto border-t border-amber-400 my-8"></div>
+
+  <!-- School at a Glance -->
+  <section id="glance" class="bg-slate-100 py-10 sm:py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-center text-xl sm:text-2xl font-bold text-sky-900">SCHOOL AT A GLANCE</h2>
+      <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+        <div class="bg-sky-900 text-center text-white rounded-lg py-4 shadow-card">
+          <div class="text-2xl font-bold text-amber-400">2014</div>
+          <div class="text-[11px] mt-1">Year Established</div>
+        </div>
+        <div class="bg-emerald-600 text-center text-white rounded-lg py-4 shadow-card">
+          <div class="text-2xl font-bold">450+</div>
+          <div class="text-[11px] mt-1">Students Enrolled</div>
+        </div>
+        <div class="bg-red-600 text-center text-white rounded-lg py-4 shadow-card">
+          <div class="text-2xl font-bold">40+</div>
+          <div class="text-[11px] mt-1">Expert Teachers</div>
+        </div>
+        <div class="bg-purple-600 text-center text-white rounded-lg py-4 shadow-card">
+          <div class="text-2xl font-bold">8</div>
+          <div class="text-[11px] mt-1">Acre Campus</div>
+        </div>
+        <div class="bg-amber-500 text-center text-white rounded-lg py-4 shadow-card">
+          <div class="text-2xl font-bold">100%</div>
+          <div class="text-[11px] mt-1">Board Pass Rate</div>
+        </div>
+        <div class="bg-slate-900 text-center text-white rounded-lg py-4 shadow-card">
+          <div class="text-2xl font-bold text-amber-400">5+</div>
+          <div class="text-[11px] mt-1">National Awards</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-10 sm:py-14">
+    <div class="max-w-6xl mx-auto px-4 space-y-10">
+      <div class="text-center">
+        <h2 class="text-xl sm:text-2xl font-bold text-sky-900">ABOUT ANIKET SAINIK SCHOOL</h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-500">Established in 2014, Nurturing Excellence for Over Decades</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 md:gap-10 items-start">
+        <div class="bg-slate-50 rounded-xl p-5 sm:p-6 shadow-card text-sm sm:text-base leading-relaxed">
+          <h3 class="text-lg font-semibold text-sky-900 mb-2">Our Story</h3>
+          <div class="w-16 h-0.5 bg-amber-400 mb-3"></div>
+          <p>
+            Aniket Sainik School stands as a beacon of educational excellence in the heart of the village.
+            Founded by Mr. Arjun Kalnu Gawai (President of Aniket Sainik School, Lakshya Carrier Academy,
+            NAFS Engineering College, Urdu Junior College) with a vision to create future leaders, our
+            institution combines rigorous academics with character development, physical training, and moral values.
+          </p>
+          <p class="mt-3">
+            We believe in holistic development where every student is encouraged to explore their potential,
+            develop critical thinking skills, and become responsible citizens of tomorrow. Our unique approach
+            integrates military-style discipline with modern educational practices.
+          </p>
+        </div>
+        <div>
+          <img src="photo/schoolimage.jpeg" alt="School Building" class="w-full rounded-xl shadow-card max-h-80 object-cover" />
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="bg-sky-900 text-white rounded-xl p-5 text-sm sm:text-base shadow-card text-center">
+          <h3 class="text-amber-400 font-semibold mb-3">OUR VISION</h3>
+          <p>
+            To be a world-class educational institution that produces intellectually capable, physically fit,
+            and morally upright individuals who will serve as leaders in various walks of life and contribute
+            to nation-building.
+          </p>
+        </div>
+        <div class="bg-emerald-600 text-white rounded-xl p-5 text-sm sm:text-base shadow-card text-center">
+          <h3 class="font-semibold mb-3">OUR MISSION</h3>
+          <p>
+            To provide quality education that develops the whole child - intellectually, emotionally, socially,
+            and physically. We foster a love for learning, instill discipline, and prepare students for the
+            challenges of the modern world.
+          </p>
+        </div>
+        <div class="bg-red-600 text-white rounded-xl p-5 text-sm sm:text-base shadow-card text-center">
+          <h3 class="font-semibold mb-3">CORE VALUES</h3>
+          <p class="space-y-1">
+            <span class="block"><b>Integrity</b> - Honesty in all actions</span>
+            <span class="block"><b>Excellence</b> - Striving for the best</span>
+            <span class="block"><b>Discipline</b> - Self-control and order</span>
+            <span class="block"><b>Respect</b> - For self and others</span>
+            <span class="block"><b>Courage</b> - To face challenges</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-slate-50 rounded-xl p-6 sm:p-8 text-center shadow-card">
+        <h3 class="text-lg sm:text-xl font-semibold text-sky-900 mb-2">📜 School Philosophy</h3>
+        <p class="italic text-sm sm:text-base">
+          "Education shapes who we become, and its benefits stay for life."
+        </p>
+        <p class="mt-4 text-sm sm:text-base text-slate-600">
+          At Aniket Sainik School, we believe that every child is unique and possesses immense potential.
+          Our philosophy centers on discovering and nurturing this potential through a balanced approach of
+          academics, co-curricular activities, sports, and character education. We prepare students not just
+          for examinations, but for life itself.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- President Message -->
+  <section class="py-10 sm:py-14 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-4 space-y-8">
+      <h2 class="text-center text-xl sm:text-2xl font-bold text-sky-900">PRESIDENT'S MESSAGE</h2>
+      <div class="bg-white rounded-xl shadow-card p-5 sm:p-8 grid md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] gap-6 items-start">
+        <div class="text-center">
+          <img src="photo/presidentimage.jpeg" alt="President" class="mx-auto w-40 h-48 object-cover rounded-xl shadow" />
+          <div class="mt-3 font-semibold text-sky-900">Arjun Gawai</div>
+          <div class="text-xs text-slate-500">Ex Army Man</div>
+          <div class="text-xs text-emerald-600 font-semibold">President</div>
+        </div>
+        <div class="text-sm sm:text-base leading-relaxed">
+          <p class="font-semibold text-sky-900 mb-2">Dear Students, Parents, and Well-wishers,</p>
+          <p>
+            Welcome to Aniket Sainik School. Our aim is to give every student good education with discipline,
+            confidence, and strong values. We believe that children should learn not only from books, but also
+            through activities, sports, and daily habits that build character.
+          </p>
+          <p class="mt-3">
+            At our school, we teach our students to be respectful, responsible, and honest. We focus on physical
+            training, classroom learning, and other programs that help students become leaders in the future.
+            Our teachers work hard to support each child so they can discover their strengths and improve every day.
+          </p>
+          <p class="mt-3">
+            We are proud of our students and the progress they make. With the support of parents and teachers,
+            we hope to guide our young cadets towards success in their studies and in life.
+          </p>
+          <p class="mt-4 font-semibold text-sky-900">With warm regards,<br />Arjun Gawai</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principal Message -->
+  <section id="principal" class="py-10 sm:py-14">
+    <div class="max-w-5xl mx-auto px-4 space-y-8">
+      <h2 class="text-center text-xl sm:text-2xl font-bold text-sky-900">PRINCIPAL'S MESSAGE</h2>
+      <div class="bg-slate-50 rounded-xl shadow-card p-5 sm:p-8 grid md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] gap-6 items-start">
+        <div class="text-center">
+          <img src="photo/principalimage.jpeg" alt="Principal" class="mx-auto w-40 h-48 object-cover rounded-xl shadow" />
+          <div class="mt-3 font-semibold text-sky-900">Pradip Jadhao</div>
+          <div class="text-xs text-slate-500">M.A., M.Ed. (Education)</div>
+          <div class="text-xs text-emerald-600 font-semibold">Principal</div>
+        </div>
+        <div class="text-sm sm:text-base leading-relaxed">
+          <p class="font-semibold text-sky-900 mb-2">Dear Students, Parents, and Well-wishers,</p>
+          <p>
+            Welcome to Aniket Sainik School! It gives me immense pleasure to lead an institution that has been
+            shaping young minds for over a decades.
+          </p>
+          <p class="mt-3">
+            In today's rapidly changing world, education must go beyond textbooks. At our school, we focus on
+            developing well-rounded individuals who are not only academically proficient but also possess
+            strong moral character, leadership qualities, and a sense of responsibility towards society.
+          </p>
+          <p class="mt-3">
+            Our dedicated faculty, state-of-the-art facilities, and comprehensive curriculum ensure that every
+            student receives the best possible education. We take pride in our military-style discipline that
+            instills values of punctuality, integrity, and respect in our students.
+          </p>
+          <p class="mt-3">
+            I invite you to explore our school and discover why Aniket Sainik School is the right choice for your
+            child's future. Together, let us build a generation of leaders who will make our nation proud.
+          </p>
+          <p class="mt-3 italic">
+            "Education is the most powerful weapon which you can use to change the world."
+          </p>
+          <p class="mt-4 font-semibold text-sky-900">With warm regards,<br />Pradip Jadhao</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why-choose" class="bg-sky-900 text-white py-10 sm:py-14">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-8">
+        <h2 class="text-xl sm:text-2xl font-bold text-amber-400">WHY CHOOSE ANIKET SAINIK SCHOOL?</h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-100">Discover what makes us the preferred choice for quality education</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-5 text-sm sm:text-base">
+        <div class="bg-white text-slate-800 rounded-xl p-5 shadow-card space-y-3">
+          <p><span class="text-emerald-600 font-bold">✓</span> <b>SSC Affiliated Curriculum</b> - Recognized board with state level standards</p>
+          <p><span class="text-emerald-600 font-bold">✓</span> <b>Experienced Faculty</b> - Highly qualified and trained teachers</p>
+          <p><span class="text-emerald-600 font-bold">✓</span> <b>Smart Classrooms</b> - Technology-enabled learning environment</p>
+          <p><span class="text-emerald-600 font-bold">✓</span> <b>Military-Style Discipline</b> - Character building through structured routine</p>
+        </div>
+        <div class="bg-white text-slate-800 rounded-xl p-5 shadow-card space-y-3">
+          <p><span class="text-emerald-600 font-bold">✓</span> <b>Sports Excellence</b> - Best sports facilities and coaching</p>
+          <p><span class="text-emerald-600 font-bold">✓</span> <b>Safe & Secure Campus</b> - CCTV surveillance and trained security</p>
+          <p><span class="text-emerald-600 font-bold">✓</span> <b>Hostel Facility</b> - Comfortable residential accommodation</p>
+          <p><span class="text-emerald-600 font-bold">✓</span> <b>Transport Services</b> - GPS-enabled buses covering all areas</p>
+        </div>
+        <div class="bg-white text-slate-800 rounded-xl p-5 shadow-card space-y-3">
+          <p><span class="text-emerald-600 font-bold">✓</span> <b>Holistic Development</b> - Focus on mind, body, and character</p>
+          <p><span class="text-emerald-600 font-bold">✓</span> <b>Career Counseling</b> - Expert guidance for future planning</p>
+          <p><span class="text-emerald-600 font-bold">✓</span> <b>Co-Curricular Activities</b> - Music, dance, art, and more</p>
+          <p><span class="text-emerald-600 font-bold">✓</span> <b>Parent Engagement</b> - Regular PTMs and communication</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academics -->
+  <section id="academics" class="py-10 sm:py-14">
+    <div class="max-w-6xl mx-auto px-4 space-y-8">
+      <div class="text-center">
+        <h2 class="text-xl sm:text-2xl font-bold text-sky-900">ACADEMICS</h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-500">Comprehensive Education from Nursery to Class X</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+        <div class="bg-slate-50 rounded-xl p-5 sm:p-6 shadow-card text-sm sm:text-base">
+          <h3 class="text-lg font-semibold text-sky-900 mb-2">Classes Offered</h3>
+          <div class="w-20 h-0.5 bg-amber-400 mb-3"></div>
+          <p class="mb-2"><b>Pre-Primary Section:</b></p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Nursery (Age 3+)</li>
+            <li>LKG (Age 4+)</li>
+            <li>UKG (Age 5+)</li>
+          </ul>
+          <p class="mt-3 mb-2"><b>Primary Section:</b></p>
+          <p>Class I to Class V</p>
+          <p class="mt-3 mb-2"><b>Middle Section:</b></p>
+          <p>Class VI to Class VIII</p>
+          <p class="mt-3 mb-2"><b>Secondary Section:</b></p>
+          <p>Class IX to Class X (Board)</p>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-5 sm:p-6 shadow-card text-sm sm:text-base space-y-3">
+          <div class="bg-sky-900 text-white rounded-lg p-4 text-center shadow">
+            <div class="text-amber-400 text-lg font-bold">SSC AFFILIATED</div>
+            <div class="text-xs mt-1">UDISE No: 27041301714</div>
+          </div>
+          <h3 class="text-lg font-semibold text-sky-900">Curriculum Framework</h3>
+          <div class="w-24 h-0.5 bg-amber-400 mb-1"></div>
+          <p>Our curriculum follows the CBSE pattern with focus on:</p>
+          <ul class="list-disc list-inside space-y-1">
+            <li><b>Core Subjects:</b> English, Hindi, Mathematics, Science, Social Studies</li>
+            <li><b>Computer Education:</b> From Class III onwards</li>
+            <li><b>Value Education:</b> Moral Science &amp; Ethics</li>
+            <li><b>Physical Education:</b> Mandatory for all</li>
+            <li><b>Art &amp; Craft:</b> Creative expression</li>
+            <li><b>Music &amp; Dance:</b> Cultural development</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-emerald-600 text-white rounded-xl p-6 sm:p-8 text-center shadow-card text-sm sm:text-base">
+        <h3 class="text-lg sm:text-xl font-semibold mb-3">🎓 Our Teaching Approach</h3>
+        <p class="font-medium">
+          Activity-Based Learning | Experiential Education | Critical Thinking Development | Project-Based Assessment
+        </p>
+        <p class="mt-3 text-slate-100">
+          We employ modern pedagogical methods including smart classrooms, digital learning tools, interactive
+          sessions, practical demonstrations, and regular assessments to ensure comprehensive understanding of concepts.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Houses & Departments -->
+  <section id="houses" class="py-10 sm:py-14 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 space-y-8">
+      <div class="text-center">
+        <h2 class="text-xl sm:text-2xl font-bold text-sky-900">HOUSE SYSTEM &amp; DEPARTMENTS</h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-500">Building Team Spirit, Leadership, and Healthy Competition</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-xs sm:text-sm">
+        <div class="bg-red-600 text-white rounded-xl p-4 shadow-card">
+          <div class="text-lg mb-1">🔴</div>
+          <div class="font-semibold">SHIVAJI HOUSE</div>
+          <div class="text-[11px] italic mt-1">"Courage &amp; Valor"</div>
+          <div class="text-[11px] mt-1">Red House</div>
+        </div>
+        <div class="bg-sky-500 text-white rounded-xl p-4 shadow-card">
+          <div class="text-lg mb-1">🔵</div>
+          <div class="font-semibold">TAGORE HOUSE</div>
+          <div class="text-[11px] italic mt-1">"Wisdom &amp; Creativity"</div>
+          <div class="text-[11px] mt-1">Blue House</div>
+        </div>
+        <div class="bg-emerald-600 text-white rounded-xl p-4 shadow-card">
+          <div class="text-lg mb-1">🟢</div>
+          <div class="font-semibold">ASHOKA HOUSE</div>
+          <div class="text-[11px] italic mt-1">"Peace &amp; Unity"</div>
+          <div class="text-[11px] mt-1">Green House</div>
+        </div>
+        <div class="bg-amber-400 text-black rounded-xl p-4 shadow-card">
+          <div class="text-lg mb-1">🟡</div>
+          <div class="font-semibold">RAMAN HOUSE</div>
+          <div class="text-[11px] italic mt-1">"Science &amp; Innovation"</div>
+          <div class="text-[11px] mt-1">Yellow House</div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5 text-sm sm:text-base">
+        <div class="bg-slate-900 text-white rounded-xl p-5 text-center shadow-card">
+          <h3 class="text-amber-400 font-semibold mb-3">Lakshya Carrier Academy</h3>
+          <p>
+            Active unit with Army-style training for boys and girls. Regular camps, parades, and participation in
+            events. Training in discipline, leadership, and national service.
+          </p>
+        </div>
+        <div class="bg-purple-700 text-white rounded-xl p-5 text-center shadow-card">
+          <h3 class="font-semibold mb-3">SCOUTS &amp; GUIDES</h3>
+          <p>
+            Bharat Scouts and Guides affiliated unit. Adventure camps, community service, and skill development.
+            Building self-reliance and civic responsibility.
+          </p>
+        </div>
+        <div class="bg-teal-700 text-white rounded-xl p-5 text-center shadow-card">
+          <h3 class="font-semibold mb-3">SPORTS DEPARTMENT</h3>
+          <p>
+            Professional coaching in multiple sports. Inter-school, Taluka-level, District-level and State-level
+            competitions. Focus on physical fitness and sportsmanship.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Honor & Discipline -->
+  <section id="discipline" class="bg-slate-900 text-white py-10 sm:py-14">
+    <div class="max-w-6xl mx-auto px-4 space-y-8">
+      <div class="text-center">
+        <h2 class="text-xl sm:text-2xl font-bold text-amber-400">HONOR &amp; DISCIPLINE</h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-100">The Foundation of Character Building - Sainik School Tradition</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm sm:text-base">
+        <div class="bg-white text-slate-800 rounded-xl p-5 sm:p-6 shadow-card">
+          <h3 class="text-lg font-semibold text-sky-900 mb-2">Code of Conduct</h3>
+          <div class="w-24 h-0.5 bg-red-500 mb-3"></div>
+          <p class="font-semibold mb-2">Our students pledge to:</p>
+          <ul class="space-y-1 text-sm">
+            <li>🔹 Maintain punctuality at all times</li>
+            <li>🔹 Wear uniform with pride and discipline</li>
+            <li>🔹 Respect teachers, elders, and peers</li>
+            <li>🔹 Uphold honesty and integrity</li>
+            <li>🔹 Follow school rules diligently</li>
+            <li>🔹 Participate actively in morning assembly</li>
+            <li>🔹 Keep the campus clean and green</li>
+            <li>🔹 Abstain from use of mobile phones</li>
+            <li>🔹 Report any misconduct immediately</li>
+            <li>🔹 Represent the school with honor</li>
+          </ul>
+        </div>
+        <div class="bg-white text-slate-800 rounded-xl p-5 sm:p-6 shadow-card">
+          <h3 class="text-lg font-semibold text-sky-900 mb-2">Student Council</h3>
+          <div class="w-24 h-0.5 bg-red-500 mb-3"></div>
+          <p class="font-semibold mb-2">Leadership Positions:</p>
+          <ul class="space-y-1 text-sm">
+            <li>🎖️ Head Boy - Overall student leadership</li>
+            <li>🎖️ Head Girl - Overall student leadership</li>
+            <li>🎖️ Sports Captain - Sports activities</li>
+            <li>🎖️ House Captains - House representation</li>
+            <li>🎖️ Class Monitors - Classroom discipline</li>
+            <li>🎖️ Prefects - Campus discipline</li>
+          </ul>
+          <p class="mt-3 text-sm italic">
+            Student leaders are selected through a democratic process based on merit, discipline, and leadership qualities.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-red-600 rounded-xl p-4 text-center text-xs sm:text-sm font-medium">
+        <span class="text-white"><b>SCHOOL MOTTO:</b> "Decorum , Disipline and Development" | <b>SCHOOL PLEDGE:</b> "To serve the nation with honor and integrity"</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities -->
+  <section id="facilities" class="py-10 sm:py-14">
+    <div class="max-w-6xl mx-auto px-4 space-y-8">
+      <div class="text-center">
+        <h2 class="text-xl sm:text-2xl font-bold text-sky-900">WORLD-CLASS FACILITIES</h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-500">State-of-the-Art Infrastructure for Holistic Development</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 text-sm">
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card text-center">
+          <img src="photo/class.jpeg" alt="Smart Classroom" class="w-full h-40 object-cover rounded-lg mb-3" />
+          <h3 class="font-semibold text-sky-900 mb-1">Smart Classrooms</h3>
+          <p class="text-xs text-slate-600">
+            Digital boards, projectors, and audio-visual equipment for interactive learning experience.
+          </p>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card text-center">
+          <img src="photo/laboutry.jpeg" alt="Science Lab" class="w-full h-40 object-cover rounded-lg mb-3" />
+          <h3 class="font-semibold text-sky-900 mb-1">Science Laboratories</h3>
+          <p class="text-xs text-slate-600">
+            Fully equipped laboratories for practical experiments and hands-on learning.
+          </p>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card text-center">
+          <img src="photo/computer lab.jpeg" alt="Computer Lab" class="w-full h-40 object-cover rounded-lg mb-3" />
+          <h3 class="font-semibold text-sky-900 mb-1">Computer Lab</h3>
+          <p class="text-xs text-slate-600">
+            Modern computers with high-speed internet and latest software for digital learning.
+          </p>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card text-center">
+          <img src="photo/studyroom.jpeg" alt="Study Area" class="w-full h-40 object-cover rounded-lg mb-3" />
+          <h3 class="font-semibold text-sky-900 mb-1">Study Area</h3>
+          <p class="text-xs text-slate-600">
+            Peaceful and well-equipped study spaces supporting focused learning.
+          </p>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card text-center">
+          <img src="photo/ground.jpeg" alt="Sports Ground" class="w-full h-40 object-cover rounded-lg mb-3" />
+          <h3 class="font-semibold text-sky-900 mb-1">Sports Grounds</h3>
+          <p class="text-xs text-slate-600">
+            Cricket, football, Kabaddi, volleyball courts, athletics track and more.
+          </p>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card text-center">
+          <img src="photo/hostel.jpeg" alt="Hostel" class="w-full h-40 object-cover rounded-lg mb-3" />
+          <h3 class="font-semibold text-sky-900 mb-1">Hostel Facility</h3>
+          <p class="text-xs text-slate-600">
+            Separate hostel for boys with 24/7 warden supervision and home-like ambiance.
+          </p>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card text-center">
+          <img src="photo/transport.jpeg" alt="Transport" class="w-full h-40 object-cover rounded-lg mb-3" />
+          <h3 class="font-semibold text-sky-900 mb-1">Transportation</h3>
+          <p class="text-xs text-slate-600">
+            Fleet of GPS-enabled buses covering all major routes with trained drivers.
+          </p>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card text-center">
+          <img src="photo/medical.jpeg" alt="Medical" class="w-full h-40 object-cover rounded-lg mb-3" />
+          <h3 class="font-semibold text-sky-900 mb-1">Medical Center</h3>
+          <p class="text-xs text-slate-600">
+            In-campus first-aid facilities and tie-up hospitals for emergency care.
+          </p>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card text-center sm:col-span-2 lg:col-span-1">
+          <img src="photo/security.jpeg" alt="Security" class="w-full h-40 object-cover rounded-lg mb-3" />
+          <h3 class="font-semibold text-sky-900 mb-1">Security System</h3>
+          <p class="text-xs text-slate-600">
+            24/7 CCTV surveillance, trained guards, and secure campus environment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities & Events -->
+  <section id="events" class="py-10 sm:py-14 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 space-y-8">
+      <div class="text-center">
+        <h2 class="text-xl sm:text-2xl font-bold text-sky-900">ACTIVITIES &amp; EVENTS</h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-500">Year-Round Celebrations and Competitions</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5 text-xs sm:text-sm">
+        <div class="bg-red-600 text-white rounded-xl p-5 shadow-card text-center">
+          <h3 class="font-semibold mb-2">ANNUAL DAY</h3>
+          <p>
+            Grand celebration featuring cultural performances, drama, dance, music, and prize distribution.
+            A showcase of student talent and achievements.
+          </p>
+        </div>
+        <div class="bg-emerald-600 text-white rounded-xl p-5 shadow-card text-center">
+          <h3 class="font-semibold mb-2">SPORTS DAY</h3>
+          <p>
+            Athletic meet with track and field events, march past, PT display, and inter-house competitions.
+            Promoting sportsmanship.
+          </p>
+        </div>
+        <div class="bg-sky-500 text-white rounded-xl p-5 shadow-card text-center">
+          <h3 class="font-semibold mb-2">REPUBLIC DAY</h3>
+          <p>
+            Flag hoisting ceremony, patriotic songs, and cultural program celebrating our nation's Constitution.
+          </p>
+        </div>
+        <div class="bg-purple-600 text-white rounded-xl p-5 shadow-card text-center">
+          <h3 class="font-semibold mb-2">SCIENCE EXHIBITION</h3>
+          <p>
+            Students showcase innovative projects, working models, and scientific experiments. Fostering
+            curiosity and creativity.
+          </p>
+        </div>
+        <div class="bg-orange-500 text-white rounded-xl p-5 shadow-card text-center">
+          <h3 class="font-semibold mb-2">CULTURAL FEST</h3>
+          <p>
+            Inter-school competition featuring dance, music, drama, art, debate, and quiz. Celebrating diverse talents.
+          </p>
+        </div>
+        <div class="bg-teal-500 text-white rounded-xl p-5 shadow-card text-center">
+          <h3 class="font-semibold mb-2">TEACHERS' DAY</h3>
+          <p>
+            Students pay tribute to their teachers through performances, speeches, and gifts. Honoring our mentors.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl p-4 sm:p-5 text-center shadow-card text-xs sm:text-sm text-sky-900">
+        <span class="font-semibold">Other Events:</span>
+        <span class="text-slate-700 ml-1">
+          Independence Day | Children's Day | Founder's Day | Parent-Teacher Meet | Educational Excursions |
+          Inter-House Competitions | Debate Competitions | Quiz Competitions | Art Exhibition | MORE ON...
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="py-10 sm:py-14 bg-amber-400">
+    <div class="max-w-6xl mx-auto px-4 space-y-8">
+      <div class="text-center text-white">
+        <h2 class="text-xl sm:text-2xl font-bold">ACHIEVEMENTS &amp; AWARDS</h2>
+        <p class="mt-2 text-sm sm:text-base">Celebrating Excellence in Academics, Sports, and Beyond</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5 text-sm">
+        <div class="bg-white rounded-xl p-5 shadow-card text-center md:col-span-1">
+          <h3 class="text-emerald-600 font-semibold mb-2">BOARD RESULTS 2024</h3>
+          <div class="w-16 h-0.5 bg-emerald-500 mx-auto mb-3"></div>
+          <p><b>Class X:</b> 100% Pass Rate</p>
+          <p class="mt-1">School Topper: 97.2%</p>
+        </div>
+        <div class="md:col-span-2 flex items-stretch">
+          <div class="bg-slate-900 text-white rounded-xl p-4 sm:p-5 w-full text-center shadow-card text-xs sm:text-sm">
+            <span class="text-amber-400 font-semibold">🏆 RECOGNITIONS &amp; AWARDS:</span>
+            <p class="mt-2">
+              Best School Award (District) | Green School Certification | Excellence in Education | Sports Academy Award
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-10 sm:py-14">
+    <div class="max-w-6xl mx-auto px-4 space-y-8">
+      <div class="text-center">
+        <h2 class="text-xl sm:text-2xl font-bold text-sky-900">📸 PHOTO GALLERY</h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-500">Glimpses of Life at Aniket Sainik School</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs text-center">
+        <div class="space-y-1">
+          <img src="photo/ground.jpeg" alt="Campus View" class="w-full h-40 object-cover rounded-xl shadow-card" />
+          <div>Campus View</div>
+        </div>
+        <div class="space-y-1">
+          <img src="photo/class.jpeg" alt="Classroom" class="w-full h-40 object-cover rounded-xl shadow-card" />
+          <div>Smart Classroom</div>
+        </div>
+        <div class="space-y-1">
+          <img src="photo/sportsday.jpeg" alt="Sports Day" class="w-full h-40 object-cover rounded-xl shadow-card" />
+          <div>Sports Day</div>
+        </div>
+        <div class="space-y-1">
+          <img src="photo/annual.jpeg" alt="Annual Day" class="w-full h-40 object-cover rounded-xl shadow-card" />
+          <div>Annual Day</div>
+        </div>
+        <div class="space-y-1">
+          <img src="photo/laboutry.jpeg" alt="Science Lab" class="w-full h-40 object-cover rounded-xl shadow-card" />
+          <div>Science Lab</div>
+        </div>
+        <div class="space-y-1">
+          <img src="photo/studyroom.jpeg" alt="Study area" class="w-full h-40 object-cover rounded-xl shadow-card" />
+          <div>Library</div>
+        </div>
+        <div class="space-y-1">
+          <img src="photo/parade.jpeg" alt="Students Parade" class="w-full h-40 object-cover rounded-xl shadow-card" />
+          <div>Students Parade</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission Steps & Requirements -->
+  <section class="py-10 sm:py-14 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 space-y-8">
+      <div class="text-center">
+        <h2 class="text-xl sm:text-2xl font-bold text-sky-900">ADMISSION PROCESS</h2>
+      </div>
+
+      <div class="grid md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-6 md:gap-8 text-sm sm:text-base">
+        <div class="bg-white rounded-xl p-5 sm:p-6 shadow-card">
+          <h3 class="text-lg font-semibold text-sky-900 mb-2">📋 Admission Steps</h3>
+          <div class="w-24 h-0.5 bg-emerald-500 mb-3"></div>
+          <ol class="space-y-3 text-sm">
+            <li class="flex items-start gap-3">
+              <span class="bg-emerald-600 text-white rounded-full w-7 h-7 flex items-center justify-center text-xs font-bold mt-0.5">1</span>
+              <span><b>Collect Prospectus</b><br />From school office</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="bg-sky-500 text-white rounded-full w-7 h-7 flex items-center justify-center text-xs font-bold mt-0.5">2</span>
+              <span><b>Fill Application Form</b><br />Complete all sections accurately</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="bg-orange-500 text-white rounded-full w-7 h-7 flex items-center justify-center text-xs font-bold mt-0.5">3</span>
+              <span><b>Submit Documents</b><br />Attach all required documents</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="bg-purple-600 text-white rounded-full w-7 h-7 flex items-center justify-center text-xs font-bold mt-0.5">4</span>
+              <span><b>Entrance Test</b><br />Appear for interview</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="bg-red-600 text-white rounded-full w-7 h-7 flex items-center justify-center text-xs font-bold mt-0.5">5</span>
+              <span><b>Confirmation</b><br />Pay fees and confirm admission</span>
+            </li>
+          </ol>
+        </div>
+        <div class="space-y-4">
+          <div class="bg-sky-900 text-white rounded-xl p-5 sm:p-6 shadow-card">
+            <h3 class="text-lg font-semibold text-amber-400 mb-2">✅ Eligibility Criteria</h3>
+            <p>• <b>Nursery:</b> Age 3+ years as on 31st March</p>
+            <p>• <b>Class I:</b> Age 5+ years as on 31st March</p>
+            <p>• <b>Class II-VIII:</b> Passed previous class from recognized school</p>
+          </div>
+          <div class="bg-emerald-600 text-white rounded-xl p-5 sm:p-6 shadow-card">
+            <h3 class="text-lg font-semibold mb-2">📄 Documents Required</h3>
+            <ul class="list-disc list-inside space-y-1 text-sm">
+              <li>Birth Certificate (Original + Copy)</li>
+              <li>Aadhar Card of Student and Parents</li>
+              <li>Previous School Transfer Certificate</li>
+              <li>Report Card of Last Class Attended</li>
+              <li>Passport Size Photographs (6 copies)</li>
+              <li>Caste Certificate (if applicable)</li>
+              <li>Medical Fitness Certificate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-slate-900 text-white rounded-xl p-5 sm:p-6 text-center shadow-card text-sm sm:text-base">
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#admission" class="inline-flex justify-center items-center px-5 py-2.5 rounded-full bg-red-600 hover:bg-red-700 font-semibold text-sm">
+            📝 ONLINE ENQUIRY (FORM BELOW)
+          </a>
+          <a href="#contact" class="inline-flex justify-center items-center px-5 py-2.5 rounded-full bg-sky-600 hover:bg-sky-700 font-semibold text-sm">
+            📞 CALL US NOW
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculty -->
+  <section id="faculty" class="py-10 sm:py-14">
+    <div class="max-w-6xl mx-auto px-4 space-y-8">
+      <div class="text-center">
+        <h2 class="text-xl sm:text-2xl font-bold text-sky-900">OUR DISTINGUISHED FACULTY</h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-500">Experienced and Dedicated Educators Shaping Young Minds</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-center text-xs sm:text-sm">
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="photo/principalimage.jpeg" alt="Principal" class="faculty-img mb-2" />
+          <div class="font-semibold">Principal</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/Dipak Rajput .jpeg" alt="Science" class="faculty-img mb-2" />
+          <div class="font-semibold">Science</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/Amol Tambat.jpeg" alt="English" class="faculty-img mb-2" />
+          <div class="font-semibold">English</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/Swati Tale.jpeg" alt="English" class="faculty-img mb-2" />
+          <div class="font-semibold">English</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/Vijay Jadhav.jpeg" alt="History" class="faculty-img mb-2" />
+          <div class="font-semibold">History</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/Varsha Gaikwad.jpeg" alt="Geography" class="faculty-img mb-2" />
+          <div class="font-semibold">Geography</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/Sunhash Salve.jpeg" alt="Maths" class="faculty-img mb-2" />
+          <div class="font-semibold">Maths</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/Minal Khillare.jpeg" alt="Arts" class="faculty-img mb-2" />
+          <div class="font-semibold">Arts</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/Yasmin Hussain.jpeg" alt="Hindi" class="faculty-img mb-2" />
+          <div class="font-semibold">Hindi</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/Sulochana Narwade.jpeg" alt="Maths" class="faculty-img mb-2" />
+          <div class="font-semibold">Maths</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/Viinita deshmukh.jpeg" alt="Civics" class="faculty-img mb-2" />
+          <div class="font-semibold">Civics</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/Harshali Bahekar.jpeg" alt="Maths" class="faculty-img mb-2" />
+          <div class="font-semibold">Maths</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/shinde madam.jpeg" alt="Marathi" class="faculty-img mb-2" />
+          <div class="font-semibold">Marathi</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/Satish Kaluse.jpeg" alt="History" class="faculty-img mb-2" />
+          <div class="font-semibold">History</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/physical trainer.jpeg" alt="NCC" class="faculty-img mb-2" />
+          <div class="font-semibold">NCC</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/Jyoti Kholagadge.jpeg" alt="Computer" class="faculty-img mb-2" />
+          <div class="font-semibold">Computer</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4 shadow-card flex flex-col items-center">
+          <img src="Teachers/mangesh sarkate.jpeg" alt="Library" class="faculty-img mb-2" />
+          <div class="font-semibold">Library</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Life -->
+  <section id="student-life" class="py-10 sm:py-14 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 space-y-8">
+      <div class="text-center">
+        <h2 class="text-xl sm:text-2xl font-bold text-sky-900">STUDENT LIFE</h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-500">A Day in the Life of an Aniket Sainik School Student</p>
+      </div>
+
+      <div class="grid md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-6 md:gap-8 text-sm sm:text-base">
+        <div class="bg-sky-900 text-white rounded-xl p-5 sm:p-6 shadow-card">
+          <h3 class="text-lg font-semibold text-amber-400 mb-3">⏰ Daily Routine</h3>
+          <div class="space-y-1 text-xs sm:text-sm">
+            <div class="flex justify-between"><span class="text-amber-300">06:00 AM</span><span>Wake Up Call</span></div>
+            <div class="flex justify-between"><span class="text-amber-300">06:30 AM</span><span>Physical Training/Yoga</span></div>
+            <div class="flex justify-between"><span class="text-amber-300">08:30 AM</span><span>Breakfast</span></div>
+            <div class="flex justify-between"><span class="text-amber-300">10:00 AM</span><span>Morning Assembly</span></div>
+            <div class="flex justify-between"><span class="text-amber-300">10:30 AM</span><span>Classes Begin</span></div>
+            <div class="flex justify-between"><span class="text-amber-300">12:00 PM</span><span>Lunch Break</span></div>
+            <div class="flex justify-between"><span class="text-amber-300">12:30 PM</span><span>Afternoon Classes</span></div>
+            <div class="flex justify-between"><span class="text-amber-300">06:00 PM</span><span>Self-Study/Prep</span></div>
+            <div class="flex justify-between"><span class="text-amber-300">07:30 PM</span><span>Dinner</span></div>
+            <div class="flex justify-between"><span class="text-amber-300">10:00 PM</span><span>Lights Off</span></div>
+          </div>
+        </div>
+        <div class="space-y-4 flex flex-col justify-between">
+          <div class="bg-white rounded-xl p-5 sm:p-6 shadow-card min-h-[120px]"></div>
+          <div class="bg-emerald-600 text-white rounded-xl p-4 sm:p-5 shadow-card text-center text-xs sm:text-sm">
+            <b>Sports Offered:</b> Cricket | Football | Volleyball | Badminton | Athletics | Running | Kabaddi | Kho-Kho
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-10 sm:py-14 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 space-y-8">
+      <div class="text-center">
+        <h2 class="text-xl sm:text-2xl font-bold text-sky-900">WHAT PARENTS &amp; STUDENTS SAY</h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-500">Testimonials from Our School Community</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5 text-xs sm:text-sm">
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <p class="italic">
+            "Sending my son to Aniket Sainik School was the best decision we made. The discipline, values, and quality
+            education he received here has transformed him into a confident young man. The teachers are incredibly
+            dedicated and caring."
+          </p>
+          <div class="mt-3 font-semibold text-sky-900">- Mr. Arjun Jadhao</div>
+          <div class="text-[11px] text-slate-500">Parent of Class X Student</div>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <p class="italic">
+            "The school has excellent infrastructure and provides ample opportunities for all-round development. My
+            daughter excelled in both academics and extracurricular activities. The NCC training gave her confidence and
+            leadership skills."
+          </p>
+          <div class="mt-3 font-semibold text-sky-900">- Mrs. Devanand Shinde</div>
+          <div class="text-[11px] text-slate-500">Parent</div>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <p class="italic">
+            "My years at Aniket Sainik School were the most memorable. The combination of academics, sports, and
+            discipline prepared me well for my career in the Indian Army. I'm forever grateful to my teachers and this
+            institution."
+          </p>
+          <div class="mt-3 font-semibold text-sky-900">- Nikita Gawai</div>
+          <div class="text-[11px] text-slate-500">Alumni, Batch of 2018</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission CTA with Google Form -->
+  <section id="admission" class="py-10 sm:py-14 bg-white">
+    <div class="max-w-3xl mx-auto px-4 text-center space-y-6">
+      <div class="inline-block bg-red-600 text-white rounded-full px-5 py-2 text-xs sm:text-sm font-semibold shadow-card">
+        🎓 ADMISSIONS 2026–27 NOW OPEN!
+      </div>
+      <h2 class="text-xl sm:text-2xl font-bold text-sky-900">ADMISSION ENQUIRY</h2>
+      <p class="text-sm sm:text-base text-slate-500">Join the Aniket Sainik School Family – Limited Seats Available</p>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLScIZYhmkI2l-FdTnc1GeQFVTwpl7BZBwPzkr9msE-UvLxR1ww/viewform?usp=dialog"
+        target="_blank"
+        class="inline-block bg-sky-900 hover:bg-sky-800 text-white px-6 sm:px-8 py-3 rounded-xl text-sm sm:text-base font-semibold shadow-card"
+      >
+        Click Here to Book Appointment
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-10 sm:py-14 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-4 space-y-8">
+      <div class="text-center">
+        <h2 class="text-xl sm:text-2xl font-bold text-sky-900">📍 CONTACT US</h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-500">Get in Touch with Aniket Sainik School</p>
+      </div>
+
+      <div class="space-y-5 text-sm sm:text-base">
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Aniket+Sainik+School+Sakharkherda+Buldhana"
+          target="_blank"
+          class="block text-center p-5 border-2 border-dashed border-sky-900 bg-slate-100 rounded-xl hover:bg-slate-200 transition-colors"
+        >
+          <div class="text-base sm:text-lg font-semibold text-sky-900 mb-1">View School Location on Google Maps</div>
+          <div class="text-xs text-slate-500">Click here to open directions in Google Maps</div>
+        </a>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-sky-900 text-white rounded-xl p-5 sm:p-6 shadow-card text-sm">
+            <h3 class="text-amber-400 font-semibold mb-2">📍 Address</h3>
+            <p>
+              Aniket Sainik School<br />
+              Sakharkherda, Sindkhed Raja,<br />
+              Near Sakharkherda – Shendurjan Road,<br />
+              Buldhana – 443202<br />
+              Maharashtra, India
+            </p>
+          </div>
+          <div class="bg-emerald-600 text-white rounded-xl p-5 sm:p-6 shadow-card text-sm">
+            <h3 class="font-semibold mb-2">📞 Contact Details</h3>
+            <p><b>Phone:</b> +91-8237372626, +91-7447622626, +91-9623361291</p>
+            <p class="mt-1"><b>Email:</b> aniketsainikschool1@gmail.com</p>
+            <p class="mt-1"><b>Website:</b> www.aniketsainikschool1.</p>
+            <p class="mt-1"><b>Office Hours:</b> Mon–Sat, 10:00 AM – 3:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 text-xs sm:text-sm">
+    <div class="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-4 gap-6">
+      <div>
+        <h3 class="text-amber-400 font-semibold mb-3">Quick Links</h3>
+        <ul class="space-y-1">
+          <li><a href="#home" class="hover:text-white">Home</a></li>
+          <li><a href="#about" class="hover:text-white">About Us</a></li>
+          <li><a href="#academics" class="hover:text-white">Academics</a></li>
+          <li><a href="#admission" class="hover:text-white">Admissions</a></li>
+          <li><a href="#gallery" class="hover:text-white">Gallery</a></li>
+          <li><a href="#contact" class="hover:text-white">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-amber-400 font-semibold mb-3">Important Info</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:text-white">Fee Structure</a></li>
+          <li><a href="Aniket Sainik School Annual plan.pdf" class="hover:text-white">School Calendar</a></li>
+          <li><a href="#" class="hover:text-white">Exam Schedule</a></li>
+          <li><a href="Aniket Sainik School Holidays.docx" class="hover:text-white">Holiday List</a></li>
+          <li><a href="#" class="hover:text-white">School Rules</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-amber-400 font-semibold mb-3">Affiliation</h3>
+        <ul class="space-y-1">
+          <li><b>UDISRE No:</b> 27041301714</li>
+          <li><b>Index No:</b> 04.05.045</li>
+          <li><b>Established:</b> 2014</li>
+          <li><b>Category:</b> Co-Educational</li>
+          <li><b>Medium:</b> English</li>
+          <li><b>Type:</b> Day &amp; Boarding</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-amber-400 font-semibold mb-3">Connect With Us</h3>
+        <ul class="space-y-1">
+          <li><a href="https://www.facebook.com/share/1D35LxcTpr/" target="_blank" class="hover:text-white">📘 Facebook</a></li>
+          <li><a href="https://www.instagram.com/aniket_sainik_school?igsh=MXV3NXhuc2Z1MnBhOA==" target="_blank" class="hover:text-white">📸 Instagram</a></li>
+          <li><a href="#" class="hover:text-white">▶️ YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-slate-500">
+        <div>© 2025 Aniket Sainik School. All Rights Reserved.</div>
+        <div>Education</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button
+    id="scrollTopBtn"
+    class="fixed bottom-4 right-4 w-9 h-9 rounded-full bg-sky-900 text-white flex items-center justify-center shadow-lg text-lg hidden"
+    aria-label="Scroll to top"
+  >
+    ↑
+  </button>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    mobileMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // Scroll-to-top button
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.remove('hidden');
+      } else {
+        scrollTopBtn.classList.add('hidden');
+      }
+    });
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
-<br>
